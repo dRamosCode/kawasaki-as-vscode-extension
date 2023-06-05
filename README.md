@@ -1,65 +1,46 @@
-# as README
+# Kawasaki AS Language Support for VSCode
 
-This is the README for your extension "as". After writing up a brief description, we recommend including the following sections.
+This VSCode extension provides language support for the Kawasaki AS programming language, offering a range of features to enhance your development experience.
 
-## Features
+# Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Syntax Highlighting
+The extension provides syntax highlighting for Kawasaki AS code, making it easier to read and understand.
 
-For example if there is an image subfolder under your extension project workspace:
+## Code Snippets
+Access a collection of code snippets specific to Kawasaki AS. Snippets include descriptions and comments to help you understand their usage.
 
-\!\[feature X\]\(images/feature-x.png\)
+## Code Formatting
+Format your Kawasaki AS code according to a consistent style to improve code readability and maintainability.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Auto Formatter
+Automatically format your Kawasaki AS code on save, ensuring consistent formatting throughout your project.
 
-## Requirements
+## Jump to Definition
+Quickly navigate to the definition of a program or a `GOTO` label in your Kawasaki AS codebase with a single click.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Custom Sidebar
+Get a project programs tree view in the sidebar, allowing you to easily navigate and switch between different programs in your Kawasaki AS project.
 
-## Extension Settings
+## Installation
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Launch Visual Studio Code.
+2. Go to the Extensions view by clicking on the square icon in the left sidebar or pressing `Ctrl+Shift+X`.
+3. Search for "Kawasaki AS Language" and click **Install**.
+4. Once installed, you can start using the extension in your Kawasaki AS projects.
 
-For example:
+## Usage
 
-This extension contributes the following settings:
+1. Open a Kawasaki AS file (with a `.as` extension) in Visual Studio Code.
+2. Enjoy the syntax highlighting, code formatting, and other features provided by the extension.
+3. Use the code snippets to quickly insert commonly used code patterns.
+4. Navigate to definitions by clicking on a function or variable.
+5. Use the custom sidebar to explore and switch between different programs in your Kawasaki AS project.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## Contributing
 
-## Known Issues
+Contributions to the Kawasaki AS Language Extension are welcome! If you encounter any issues or have suggestions for improvements, please open an issue in the [GitHub repository](https://github.com/dRamosCode/kawasaki-as-vscode-extension).
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+## License
 
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is licensed under the [MIT License](LICENSE).
