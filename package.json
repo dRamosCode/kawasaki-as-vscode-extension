@@ -1,0 +1,68 @@
+{
+	"name": "kawasaki-as-language",
+	"displayName": "Kawasaki-AS-Language",
+	"description": "VSCode Kawasaki AS language support",
+	"version": "0.0.1",
+	"publisher": "dRamosCode",
+	"categories": [
+		"Programming Languages"
+	],
+	"license": "MIT",
+	"engines": {
+		"vscode": "^1.77.0"
+	},
+	"main": "./src/extension.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "as",
+				"aliases": [
+					"Kawasaki AS",
+					"as"
+				],
+				"extensions": [
+					".as"
+				],
+				"configuration": "./syntaxes/language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "as",
+				"scopeName": "source.as",
+				"path": "./syntaxes/as.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+			  "language": "as",
+			  "path": "./snippets/as.json"
+			}
+		  ],
+		"viewsContainers": {
+			"activitybar": [
+			  {
+				"id": "project-structure",
+				"title": "Project Structure",
+				"icon": "./views/list.png"
+			  }
+			]
+		},
+		"views": {
+			"project-structure": [
+			  {
+				"id": "user",
+				"name": "User Programs"
+			  },
+			  {
+				"id": "system",
+				"name": "System Programs"
+			  },
+			  {
+				"id": "interface",
+				"name": "Interface Panel Programs"
+			  }
+			]
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+	"comments": {
+		// symbol used for single line comment. Remove this entry if your language does not support line comments
+		"lineComment": ";"
+	},
+	// symbols used as brackets
+	"brackets": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"]
+	],
+	// symbols that are auto closed when typing
+	"autoClosingPairs": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"],
+		["'", "'"],
+		["\"", "\""]
+	],
+	// symbols that can be used to surround a selection
+	"surroundingPairs": [
+		["{", "}"],
+		["[", "]"],
+		["(", ")"],
+		["'", "'"],
+		["\"", "\""]
+	],
+	"indentationRules": {
+		"increaseIndentPattern": "\\.PROGRAM|\\.TRANS|\\.JOINTS|\\.REALS|\\.STRINGS|\\.INTEGER|\\.ROBOTDATA1|\\.OPE_INFO1|\\.SYSDATA|\\.CONDITION|\\.AUXDATA|\\.INTER_PANEL_D|\\.INTER_PANEL_TITLE|\\.INTER_PANEL_COLOR_D|\\.SIG_COMMENT|\\bTHEN|\\bELSE|\\bDO|\\bTO|\\bOF|\\bVALUE|\\bANY|\\bSVALUE",
+		"decreaseIndentPattern": "\\.END|\\bEND|\\bELSE|\\bUNTIL|\\bVALUE|\\bANY|\\bSVALUE"
+	}
+}

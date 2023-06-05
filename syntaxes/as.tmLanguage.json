@@ -1,0 +1,112 @@
+{
+	"scopeName": "source.as",
+	"patterns": [{ "include": "#expression" }],
+	"repository": {
+		"expression": {
+			"patterns": [
+				{ "include": "#program" },
+				{ "include": "#flow" },
+				{ "include": "#motion" },
+				{ "include": "#speed" },
+				{ "include": "#clamp" },
+				{ "include": "#configuration" },
+				{ "include": "#control" },
+				{ "include": "#signal" },
+				{ "include": "#message" },
+				{ "include": "#pose" },
+				{ "include": "#real" },
+				{ "include": "#strings" },
+				{ "include": "#pc" },
+				{ "include": "#arithmetic" },
+				{ "include": "#mathematical" },
+				{ "include": "#relational" },
+				{ "include": "#logical" },
+				{ "include": "#bynary" },
+				{ "include": "#inline" },
+				{ "include": "#inlineString" }
+			]
+		},
+		"program": {
+			"name": "as.keyword.control.program",
+			"match": "(\\.PROGRAM)|(\\.END)|(\\.TRANS)|(\\.JOINTS)|(\\.REALS)|(\\.STRINGS)|(\\.INTEGER)|(\\.ROBOTDATA1|(\\.OPE_INFO1))|(\\.SYSDATA)|(\\.CONDITION)|(\\.AUXDATA)|(\\.INTER_PANEL_D)|(\\.INTER_PANEL_TITLE)|(\\.INTER_PANEL_COLOR_D)|(\\.SIG_COMMENT)"
+		},
+		"flow": {
+			"name": "keyword.flow",
+			"match": "(\\bIF\\b|\\bTHEN\\b|\\bELSE\\b|\\bEND\\b|\\bWHILE\\b|\\bDO\\b|\\bUNTIL\\b|\\bCASE\\b|\\bOF\\b|\\bVALUE\\b|\\bANY\\b|\\bSCASE\\b|\\bSVALUE\\b|\\bFOR\\b|\\bTO\\b|\\bSTEP\\b)"
+		},
+		"motion": {
+			"name": "keyword.control.motion",
+			"match": "(\\bJMOVE\\b|\\bLMOVE\\b|\\bDELAY\\b|\\bSTABLE\\b|\\bJAPPRO\\b|\\bLAPPRO\\b|\\bJDEPART\\b|\\bLDEPART\\b|\\bHOME\\b|\\b\\bDRIVE\\b\\b|\\bDRAW\\b|\\bTDRAW\\b|\\bALIGN\\b|\\bHMOVE\\b|\\bXMOVE\\b|\\TILL\\b|\\bC1MOVE\\b|\\bC2MOVE\\b)"
+		},
+		"speed": {
+			"name": "keyword.control.speed",
+			"match": "(\\bSPEED\\b|\\bACCURACY\\b|\\bACCEL\\b|\\bDECEL\\b|\\bBRAKE\\b|\\bBSPEED\\b|\\bREFFLTSET\\b|\\bREFFLTRESET\\b|\\bFFSET\\b|\\bFFRESET\\b)"
+		},
+		"clamp": {
+			"name": "keyword.control.clamp",
+			"match": "(\\bOPEN\\b|\\bOPENI\\b|\\bCLOSE\\b|\\bCLOSEI\\b|\\bRELAX\\b|\\bRELAXI\\b|\\bOPENS\\b|\\bCLOSES\\b|\\bRELAXS\\b|\\bGUNON\\b|\\bGUNOFF\\b|\\bGUNONTIMER\\b|\\bGUNOFFTIMER\\b)"
+		},
+		"configuration": {
+			"name": "keyword.control.configuration",
+			"match": "(\\bRIGHTY\\b|\\bLEFTY\\b|\\bABOVE\\b|\\bBELOW\\b|\\bUWRIST\\b|\\bDWRIST\\b)"
+		},
+		"control": {
+			"name": "keyword.control.control",
+			"match": "(\\bGOTO\\b|\\bBREAK\\b|\\bCALL\\b|\\bRETURN\\b|\\bWAIT\\b|\\bTWAIT\\b|\\bMVWAIT\\b|\\bLOCK\\b|\\bPAUSE\\b|\\bHALT\\b|\\bSTOP\\b|\\bSCALL\\b|\\bONE\\b|\\bRETURNE\\b|\\bJUMP\\b|\\bSJUMP\\b|\\bMON_TWAIT\\b)"
+		},
+		"signal": {
+			"name": "keyword.control.signal",
+			"match": "(\\bRESET\\b|\\bSIG\\b|\\bSIGNAL\\b|\\bPULSE\\b|\\bDLYSIG\\b|\\bRUNMASK\\b|\\bBITS\\b|\\bBITS32\\b|\\bSWAIT\\b|\\bEXTCALL\\b|\\bON\\b|\\bONI\\b|\\bIGNORE\\b|\\bSCNT\\b|\\bSCNTRESET\\b|\\bSFLK\\b|\\bSFLP\\b|\\bSOUT\\b|\\bSTIM\\b|\\bSETPICK\\b|\\bSETPLACE\\b|\\bCLAMP\\b|\\bHSENSESET\\b|\\bHSENSE\\b)"
+		},
+		"message": {
+			"name": "keyword.control.message",
+			"match": "(\\bPRINT\\b|\\bTYPE\\b|\\bPROMPT\\b|\\bIFPWPRINT\\b|\\bIFPWOVERWRITE\\b|\\bIFPLABEL\\b|\\bIFPTITLE\\b|\\bSETOUTDA\\b|\\bOUTDA\\b)"
+		},
+		"pose": {
+			"name": "keyword.control.pose",
+			"match": "(\\bHERE\\b|\\bPOINT\\b|\\bPOINT/X\\b|\\bPOINT/Y\\b|\\bPOINT/Z\\b|\\bPOINT/OAT\\b|\\bPOINT/O\\b|\\bPOINT/A\\b|\\bPOINT/T\\b|\\bPOINT/7\\b|\\bPOINT/18\\b|\\bPOINT/EXT\\b|\\bDECOMPOSE\\b|\\bBASE\\b|\\bTOOL\\b|\\bSET_TOOLSHAPE\\b|\\bENA_TOOLSHAPE\\b|\\bTOOLSHAPE\\b|\\bSETHOME\\b|\\bSETHOME2\\b|\\bLLIMIT\\b|\\bULIMIT\\b|\\bTIMER\\b|\\bUTIMER\\b|\\bON\\b|\\bOFF\\b|\\bNCHON\\b|\\bNCHOFF\\b|\\bWEIGHT\\b|\\bMC\\b|\\bTPLIGHT\\b|\\bCURLIM\\b|\\bSETTIME\\b|\\bENVCHKRATE\\b|\\bDEST\\b|\\b#DEST\\b|\\bFRAME\\b|\\bNULL\\b|\\bHERE\\b)"
+		},
+		"real": {
+			"name": "keyword.control.real",
+			"match": "(\\bBITS\\b|\\bBITS32\\b|\\bTIMER\\b|\\bDISTANCE\\b|\\bDX\\b|\\bDY\\b|\\bDZ\\b|\\bDEXT\\b|\\bASC\\b|\\bLEN\\b|\\bVAL\\b|\\bINSTR\\b|\\bMAXVAL\\b|\\bMINVAL\\b|\\bINT\\b|\\bMAXINDEX\\b|\\bMININDEX\\b|\\bSWITCH\\b|\\bWHICHTASK\\b|\\bTASK\\b|\\bERROR\\b|\\bPRIORITY\\b|\\bUTIMER\\b|\\bMSPEED\\b|\\bMSPEED2\\b|\\bINRANGE\\b|\\bSYSDATA\\b|\\bEXISTJOINT\\b|\\bEXISTTRANS\\b|\\bEXISTREAL\\b|\\bEXISTCHAR\\b|\\bEXISTINTEGER\\b|\\bEXISTPGM\\b|\\bEXISTLOCALJOINT\\b|\\bEXISTLOCALTRANS\\b|\\bEXISTLOCALREAL\\b|\\bEXISTLOCALCHAR\\b|\\bEXISTLOCALINTEGER\\b|\\bSTRTOPOS\\b|\\bSTRTOVAL\\b|\\bROUND\\b|\\bIQARM\\b|\\bTRQNM\\b|\\bCURLIMM\\b|\\bCURLIMP\\b|\\bENVCHKRATE\\b|\\bGETENCTEMP\\b)"
+		},
+		"strings": {
+			"name": "keyword.control.strings",
+			"match": "(\\b$CHR\\b|\\b$SPACE\\b|\\b$LEFT\\b|\\b$RIGHT\\b|\\b$MID\\b|\\b$DECODE\\b|\\b$ENCODE\\b|\\b$ERRORS\\b|\\b$ERROR\\b|\\b$DATE\\b|\\b$TIME\\b|\\b$SYSDATA\\b|\\b$ERRLOG\\b|\\b$STR_ID\\b|\\b$STR_ID2\\b)"
+		},
+		"pc": {
+			"name": "keyword.control.pc",
+			"match": "(\\bPCSTATUS\\b|\\bPCEXECUTE\\b|\\bPCABORT\\b|\\bPCKILL\\b|\\bPCEND\\b|\\bPCCONTINUE\\b|\\bPCSTEP\\b|\\bPCSCAN\\b)"
+		},
+		"arithmetic": {
+			"name": "keyword.operator.arithmetic",
+			"match": "(\\+\\b|=|\\b\\-\\b|\\b\\*\\b|\\b\\/\\b|\\b\\/\\b|\\bMOD\\b|\\b\\^)"
+		},
+		"mathematical": {
+			"name": "keyword.operator.mathematical",
+			"match": "(\\bABS\\b|\\bSQRT\\b|\\bPI\\b|\\bSIN\\b|\\bCOS\\b|\\bATAN2\\b|\\bRANDOM\\b)"
+		},
+		"relational": {
+			"name": "keyword.operator.relational",
+			"match": "(\\<|\\>|\\<=|\\=<|\\>=|\\=>|\\==|\\<>)"
+		},
+		"logical": {
+			"name": "keyword.operator.logical",
+			"match": "(\\bAND\\b|\\bOR\\b|\\bXOR\\b|\\bBOR\\b|\\bBAND\\b|\\bBXOR\\b|\\bNOT\\b)"
+		},
+		"bynary": {
+			"name": "keyword.operator.bynary",
+			"match": "(\\bTRUE\\b|\\bFALSE\\b|\\bON\\b|\\bOFF\\b|\\bCOM\\b)"
+		},
+		"inline": {
+			"name": "keyword.comment.inline",
+			"begin": ";",
+			"end": "$"
+		},
+		"inlineString": {
+			"name": "keyword.comment.inlineString",
+			"begin": "\"",
+			"end": "\""
+		}
+	}
+}

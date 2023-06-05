@@ -1,0 +1,234 @@
+{
+    ".PROGRAM": {
+        "scope": "as",
+        "prefix": ".PROGRAM \r .END",
+        "body": ".PROGRAM ${1:name}(${2:args})\r\t\r.END"
+      },
+    "IF...THEN": {
+      "scope": "as",
+      "prefix": "IF THEN \r END",
+      "body": "IF ${1:a==b} THEN\r\t${2:;Your code}\rEND"
+    },
+    "IF...ELSE": {
+        "scope": "as",
+        "prefix": "IF THEN \r ELSE \r END",
+        "body": "IF ${1:a==b} THEN\r\t${2:;Your code}\rELSE\r\t${3:;Your code}\rEND"
+    },
+    "WHILE...DO": {
+      "scope": "as",
+      "prefix": "WHILE \r DO \r END ",
+      "body": "WHILE ${1:a<b} DO\r\t${2:;Your code}\rEND"
+    },
+    "DO...UNTIL": {
+      "scope": "as",
+      "prefix": "DO \r UNTIL",
+      "body": "DO\r\t${1:;Your code}\rUNTIL ${2:a==b}"
+    },
+    "CASE...OF": {
+      "scope": "as",
+      "prefix": "CASE \r OF \r VALUE \r END",
+      "body": "CASE ${1:a} OF\rVALUE ${2:b}\r\t${3:;Your code}\rVALUE ${4:c}\r\t${5:;Your code}\rANY\r\t${6:;Your code}\rEND"
+    },
+    "SCASE...OF": {
+      "scope": "as",
+      "prefix": "SCASE \r OF \r VALUE \r END",
+      "body": "SCASE ${1:a} OF\rSVALUE ${2:b}\r\t${3:;Your code}\rSVALUE ${4:c}\r\t${5:;Your code}\rANY\r\t${6:;Your code}\rEND"
+    },
+    "FOR...TO...STEP": {
+      "scope": "as",
+      "prefix": "FOR...TO...STEP\r END ",
+      "body": "FOR ${1:a=b} TO ${2:c}\r\t${3:;Your code}\rEND"
+    },
+    "GOTO": {
+      "scope": "as",
+      "prefix": "GOTO",
+      "body": "goto ${1:label}"
+    },
+    "BREAK": {
+      "scope": "as",
+      "prefix": "BREAK",
+      "body": "BREAK",
+      "description":"Suspends the execution of the next program step until the current motion step is completed"
+    },
+    "CALL": {
+      "scope": "as",
+      "prefix": "CALL",
+      "body": "CALL ${1:program}(${2:args})"
+    },
+    "SCALL": {
+      "scope": "as",
+      "prefix": "SCALL",
+      "body": "SCALL ${1:program}(${2:args})",
+      "description":"Calls a program with a string variable"
+    },
+    "RETURN": {
+      "scope": "as",
+      "prefix": "RETURN",
+      "body": "RETURN"
+    },
+    "WAIT": {
+      "scope": "as",
+      "prefix": "WAIT",
+      "body": "WAIT ${1:a==b}"
+    },
+    "TWAIT": {
+      "scope": "as",
+      "prefix": "TWAIT",
+      "body": "TWAIT ${1:seconds}"
+    },
+    "MVWAIT": {
+      "scope": "as",
+      "prefix": "MVWAIT",
+      "body": "MVWAIT ${1:ammount} ${2|mm,s|}",
+      "description":"Suspends the execution of the next program step until robot is at specified distance or time of the current motion destination"
+    },
+    "PAUSE": {
+      "scope": "as",
+      "prefix": "PAUSE",
+      "body": "PAUSE",
+      "description":"Stops program execution. It can be resumed."
+    },
+    "HALT": {
+      "scope": "as",
+      "prefix": "HALT",
+      "body": "HALT",
+      "description":"Stops program execution. It can NOT be resumed."
+    },
+    "STOP": {
+      "scope": "as",
+      "prefix": "STOP",
+      "body": "STOP",
+      "description":"Stops program execution cycle"
+    },
+    "LOCK": {
+      "scope": "as",
+      "prefix": "LOCK",
+      "body": "LOCK"
+    },
+    "JMOVE": {
+      "scope": "as",
+      "prefix": "JMOVE",
+      "body": "JMOVE"
+    },
+    "LMOVE": {
+      "scope": "as",
+      "prefix": "LMOVE",
+      "body": "LMOVE"
+    },
+    "JAPPRO": {
+      "scope": "as",
+      "prefix": "JAPPRO",
+      "body": "JAPPRO ${1:point},${2:distance}",
+      "description":"Moves to specified distance (mm) of point in TCP's negative Z"
+    },
+    "LAPPRO": {
+      "scope": "as",
+      "prefix": "LAPPRO",
+      "body": "LAPPRO ${1:point},${2:distance}",
+      "description":"Moves to specified distance (mm) of point in TCP's negative Z"
+    },
+    "JDEPART": {
+      "scope": "as",
+      "prefix": "JDEPART",
+      "body": "JDEPART ${1:distance}",
+      "description":"Moves away from current position a specified distance (mm) in TCP's negative Z"
+    },
+    "LDEPART": {
+      "scope": "as",
+      "prefix": "LDEPART",
+      "body": "LDEPART ${1:distance}",
+      "description":"Moves away from current position a specified distance (mm) in TCP's negative Z"
+    },
+    "DRAW": {
+      "scope": "as",
+      "prefix": "DRAW",
+      "body": "DRAW ${1:x},${2:y},${3:z},${4:o},${5:a},${6:t}",
+      "description":"Moves linearly from current position in the direction of the base coordinates system"
+    },
+    "TDRAW": {
+      "scope": "as",
+      "prefix": "TDRAW",
+      "body": "TDRAW ${1:x},${2:y},${3:z},${4:o},${5:a},${6:t}",
+      "description":"Moves linearly from current position in the direction of the tool coordinates system"
+    },
+    "ALIGN": {
+      "scope": "as",
+      "prefix": "ALIGN",
+      "body": "ALIGN",
+      "description":"Aligns the Z tool axis parallel to the closest axis of the base coordinate system"
+    },
+    "XMOVE": {
+      "scope": "as",
+      "prefix": "XMOVE",
+      "body": "XMOVE ${1:point} TILL ${2:a==b}",
+      "description":"Move linearly towards point untill condition is met"
+    },
+    "DELAY": {
+      "scope": "as",
+      "prefix": "DELAY",
+      "body": "DELAY ${1:seconds}",
+      "description": "Stop robot motion specified time"
+    },
+    "STABLE": {
+      "scope": "as",
+      "prefix": "STABLE",
+      "body": "STABLE ${1:seconds}",
+      "description": "Stop robot motion specified time when TCP has reached exactly the previous location"
+    },
+    "HOME": {
+      "scope": "as",
+      "prefix": "HOME",
+      "body": "HOME",
+      "description": "Move to Home position"
+    },
+    "DRIVE": {
+      "scope": "as",
+      "prefix": "DRIVE",
+      "body": "DRIVE ${1:joint},${2:amount},${3:speed}",
+      "description": "Move specified joint axis, a number of degrees, at desired speed"
+    },
+    "HMOVE": {
+      "scope": "as",
+      "prefix": "HMOVE",
+      "body": "HMOVE ${1:point}",
+      "description": "Move to point linearly avoiding any singularity"
+    },
+    "C1MOVE": {
+      "scope": "as",
+      "prefix": "C1MOVE",
+      "body": "C1MOVE ${1:point}\rC2MOVE ${2:point}",
+      "description": "Move in circular motion from point to C1 and to C2"
+    },
+    "SPEED": {
+      "scope": "as",
+      "prefix": "SPEED",
+      "body": "SPEED",
+      "description": "SPEED X (percentage) / SPEED X MM/S (mm/s) / SPEED X MM/MIN (mm/min) / SPEED X S (s)"
+    },
+    "ACCURACY": {
+      "scope": "as",
+      "prefix": "ACCURACY",
+      "body": "ACCURACY ${1:mm}"
+    },
+    "ACCEL": {
+      "scope": "as",
+      "prefix": "ACCEL",
+      "body": "ACCEL ${1:%}"
+    },
+    "DECEL": {
+      "scope": "as",
+      "prefix": "DECEL",
+      "body": "DECEL ${1:%}"
+    },
+    "BRAKE": {
+      "scope": "as",
+      "prefix": "BRAKE",
+      "body": "BRAKE",
+      "description": "Stops robot motion immediately and program execution skips to the next step"
+    },
+    "BSPEED": {
+      "scope": "as",
+      "prefix": "BSPEED",
+      "body": "BSPEED ${1:%}"
+    }
+  }
