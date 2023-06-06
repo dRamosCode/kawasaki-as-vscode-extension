@@ -2,8 +2,12 @@
 	"name": "kawasaki-as-language",
 	"displayName": "Kawasaki-AS-Language",
 	"description": "VSCode Kawasaki AS language support",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"publisher": "dRamosCode",
+	"repository": { 
+  	"type": "git", 
+  	"url": "https://github.com/dRamosCode/kawasaki-as-vscode-extension" 
+	} ,
 	"categories": [
 		"Programming Languages"
 	],
