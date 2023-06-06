@@ -43,4 +43,4 @@ Contributions to the Kawasaki AS Language Extension are welcome! If you encounte
 
 ## License
 
-This extension is licensed under the [MIT License](LICENSE).
+This extension is licensed under the [MIT License].
