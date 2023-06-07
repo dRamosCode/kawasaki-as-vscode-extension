@@ -4,7 +4,8 @@
     "as.keyword.control.program"
   ],
   "settings": {
-    "foreground": "#F54D3D"
+    "foreground": "#F54D3D",
+    "fontStyle": "bold"
   }
   },
   {
@@ -18,7 +19,8 @@
   {
   "scope": "keyword.control.motion",
   "settings": {
-    "foreground": "#FFCB6B"
+    "foreground": "#FFCB6B",
+    "fontStyle": "bold"
   }
   },
   {

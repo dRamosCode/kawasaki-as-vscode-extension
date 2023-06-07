@@ -4,7 +4,8 @@
     "as.keyword.control.program"
   ],
   "settings": {
-    "foreground": "#e61300"
+    "foreground": "#e61300",
+    "fontStyle": "bold"
   }
   },
   {
@@ -18,7 +19,8 @@
   {
   "scope": "keyword.control.motion",
   "settings": {
-    "foreground": "#e6a100"
+    "foreground": "#e39400",
+    "fontStyle": "bold"
   }
   },
   {
@@ -54,19 +56,19 @@
     "keyword.control.signal"
   ],
   "settings": {
-    "foreground": "#d6e600"
+    "foreground": "#00bfb9"
   }
   },
   {
   "scope": "keyword.control.message",
   "settings": {
-    "foreground": "#35e6c5"
+    "foreground": "#e000c6"
   }
   },
   {
   "scope": "keyword.control.pose",
   "settings": {
-    "foreground": "#e6a42c"
+    "foreground": "#e39400"
   }
   },
   {
@@ -123,13 +125,13 @@
   {
   "scope": "keyword.comment.inline",
   "settings": {
-    "foreground": "#22e600"
+    "foreground": "#50bf52"
   }
   },
   {
   "scope": "keyword.comment.inlineString",
   "settings": {
-    "foreground": "#ffee30"
+    "foreground": "#50bf52"
   }
   }
 ]
