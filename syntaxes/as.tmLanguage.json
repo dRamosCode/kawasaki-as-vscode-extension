@@ -68,7 +68,7 @@
 		},
 		"real": {
 			"name": "keyword.control.real",
-			"match": "(\\bBITS\\b|\\bBITS32\\b|\\bTIMER\\b|\\bDISTANCE\\b|\\bDX\\b|\\bDY\\b|\\bDZ\\b|\\bDEXT\\b|\\bASC\\b|\\bLEN\\b|\\bVAL\\b|\\bINSTR\\b|\\bMAXVAL\\b|\\bMINVAL\\b|\\bINT\\b|\\bMAXINDEX\\b|\\bMININDEX\\b|\\bSWITCH\\b|\\bWHICHTASK\\b|\\bTASK\\b|\\bERROR\\b|\\bPRIORITY\\b|\\bUTIMER\\b|\\bMSPEED\\b|\\bMSPEED2\\b|\\bINRANGE\\b|\\bSYSDATA\\b|\\bEXISTJOINT\\b|\\bEXISTTRANS\\b|\\bEXISTREAL\\b|\\bEXISTCHAR\\b|\\bEXISTINTEGER\\b|\\bEXISTPGM\\b|\\bEXISTLOCALJOINT\\b|\\bEXISTLOCALTRANS\\b|\\bEXISTLOCALREAL\\b|\\bEXISTLOCALCHAR\\b|\\bEXISTLOCALINTEGER\\b|\\bSTRTOPOS\\b|\\bSTRTOVAL\\b|\\bROUND\\b|\\bIQARM\\b|\\bTRQNM\\b|\\bCURLIMM\\b|\\bCURLIMP\\b|\\bENVCHKRATE\\b|\\bGETENCTEMP\\b)"
+			"match": "(\\bBITS\\b|\\bBITS32\\b|\\bTIMER\\b|\\bDISTANCE\\b|\\bDX\\b|\\bDY\\b|\\bDZ\\b|\\bDEXT\\b|\\bASC\\b|\\bLEN\\b|\\bVAL\\b|\\bINSTR\\b|\\bMAXVAL\\b|\\bMINVAL\\b|\\bINT\\b|\\bMAXINDEX\\b|\\bMININDEX\\b|\\bSWITCH\\b|\\bWHICHTASK\\b|\\bTASK\\b|\\bERROR\\b|\\bPRIORITY\\b|\\bMSPEED\\b|\\bMSPEED2\\b|\\bINRANGE\\b|\\bSYSDATA\\b|\\bEXISTJOINT\\b|\\bEXISTTRANS\\b|\\bEXISTREAL\\b|\\bEXISTCHAR\\b|\\bEXISTINTEGER\\b|\\bEXISTPGM\\b|\\bEXISTLOCALJOINT\\b|\\bEXISTLOCALTRANS\\b|\\bEXISTLOCALREAL\\b|\\bEXISTLOCALCHAR\\b|\\bEXISTLOCALINTEGER\\b|\\bSTRTOPOS\\b|\\bSTRTOVAL\\b|\\bROUND\\b|\\bIQARM\\b|\\bTRQNM\\b|\\bCURLIMM\\b|\\bCURLIMP\\b|\\bENVCHKRATE\\b|\\bGETENCTEMP\\b)"
 		},
 		"strings": {
 			"name": "keyword.control.strings",
