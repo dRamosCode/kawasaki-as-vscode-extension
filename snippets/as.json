@@ -39,72 +39,6 @@
       "prefix": "FOR...TO...STEP\r END ",
       "body": "FOR ${1:a=b} TO ${2:c}\r\t${3:;Your code}\rEND"
     },
-    "GOTO": {
-      "scope": "as",
-      "prefix": "GOTO",
-      "body": "goto ${1:label}"
-    },
-    "BREAK": {
-      "scope": "as",
-      "prefix": "BREAK",
-      "body": "BREAK",
-      "description":"Suspends the execution of the next program step until the current motion step is completed"
-    },
-    "CALL": {
-      "scope": "as",
-      "prefix": "CALL",
-      "body": "CALL ${1:program}(${2:args})"
-    },
-    "SCALL": {
-      "scope": "as",
-      "prefix": "SCALL",
-      "body": "SCALL ${1:program}(${2:args})",
-      "description":"Calls a program with a string variable"
-    },
-    "RETURN": {
-      "scope": "as",
-      "prefix": "RETURN",
-      "body": "RETURN"
-    },
-    "WAIT": {
-      "scope": "as",
-      "prefix": "WAIT",
-      "body": "WAIT ${1:a==b}"
-    },
-    "TWAIT": {
-      "scope": "as",
-      "prefix": "TWAIT",
-      "body": "TWAIT ${1:seconds}"
-    },
-    "MVWAIT": {
-      "scope": "as",
-      "prefix": "MVWAIT",
-      "body": "MVWAIT ${1:ammount} ${2|mm,s|}",
-      "description":"Suspends the execution of the next program step until robot is at specified distance or time of the current motion destination"
-    },
-    "PAUSE": {
-      "scope": "as",
-      "prefix": "PAUSE",
-      "body": "PAUSE",
-      "description":"Stops program execution. It can be resumed."
-    },
-    "HALT": {
-      "scope": "as",
-      "prefix": "HALT",
-      "body": "HALT",
-      "description":"Stops program execution. It can NOT be resumed."
-    },
-    "STOP": {
-      "scope": "as",
-      "prefix": "STOP",
-      "body": "STOP",
-      "description":"Stops program execution cycle"
-    },
-    "LOCK": {
-      "scope": "as",
-      "prefix": "LOCK",
-      "body": "LOCK"
-    },
     "JMOVE": {
       "scope": "as",
       "prefix": "JMOVE",
@@ -230,5 +164,645 @@
       "scope": "as",
       "prefix": "BSPEED",
       "body": "BSPEED ${1:%}"
+    },
+    "OPEN": {
+      "scope": "as",
+      "prefix": "OPEN",
+      "body": "OPEN",
+      "description": "Clamp open"
+    },
+    "OPENI": {
+      "scope": "as",
+      "prefix": "OPENI",
+      "body": "OPENI",
+      "description": "Clamp open"
+    },
+    "CLOSE": {
+      "scope": "as",
+      "prefix": "CLOSE",
+      "body": "CLOSE",
+      "description": "Clamp close"
+    },
+    "CLOSEI": {
+      "scope": "as",
+      "prefix": "CLOSEI",
+      "body": "CLOSEI",
+      "description": "Clamp close"
+    },
+    "RELAX": {
+      "scope": "as",
+      "prefix": "RELAX",
+      "body": "RELAX",
+      "description": "Clamp relax"
+    },
+    "RELAXI": {
+      "scope": "as",
+      "prefix": "RELAXI",
+      "body": "RELAXI",
+      "description": "Clamp relax"
+    },
+    "OPENS": {
+      "scope": "as",
+      "prefix": "OPENS",
+      "body": "OPENS",
+      "description": "Clamp opens"
+    },
+    "CLOSES": {
+      "scope": "as",
+      "prefix": "CLOSES",
+      "body": "CLOSES",
+      "description": "Clamp closes"
+    },
+    "RELAXS": {
+      "scope": "as",
+      "prefix": "RELAXS",
+      "body": "RELAXS",
+      "description": "Clamp relaxes"
+    },
+    "GUNON": {
+      "scope": "as",
+      "prefix": "GUNON",
+      "body": "GUNON",
+      "description": "Gun on"
+    },
+    "GUNOFF": {
+      "scope": "as",
+      "prefix": "GUNOFF",
+      "body": "GUNOFF",
+      "description": "Gun off"
+    },
+    "GUNONTIMER": {
+      "scope": "as",
+      "prefix": "GUNONTIMER",
+      "body": "GUNONTIMER",
+      "description": "Gun on timer"
+    },
+    "GUNOFFTIMER": {
+      "scope": "as",
+      "prefix": "GUNOFFTIMER",
+      "body": "GUNOFFTIMER",
+      "description": "Gun off timer"
+    },
+    "RIGHTY": {
+      "scope": "as",
+      "prefix": "RIGHTY",
+      "body": "RIGHTY",
+      "description": "Righty robot configuration"
+    },
+    "LEFTY": {
+      "scope": "as",
+      "prefix": "LEFTY",
+      "body": "LEFTY",
+      "description": "Lefty robot configuration"
+    },
+    "ABOVE": {
+      "scope": "as",
+      "prefix": "ABOVE",
+      "body": "ABOVE",
+      "description": "Above robot configuration"
+    },
+    "BELOW": {
+      "scope": "as",
+      "prefix": "BELOW",
+      "body": "BELOW",
+      "description": "Below robot configuration"
+    },
+    "UWRIST": {
+      "scope": "as",
+      "prefix": "UWRIST",
+      "body": "UWRIST",
+      "description": "Uwrist robot configuration"
+    },
+    "DWRIST": {
+      "scope": "as",
+      "prefix": "DWRIST",
+      "body": "DWRIST",
+      "description": "Dwrist robot configuration"
+    },
+    "GOTO": {
+      "scope": "as",
+      "prefix": "GOTO",
+      "body": "goto ${1:label}"
+    },
+    "BREAK": {
+      "scope": "as",
+      "prefix": "BREAK",
+      "body": "BREAK",
+      "description":"Suspends the execution of the next program step until the current motion step is completed"
+    },
+    "CALL": {
+      "scope": "as",
+      "prefix": "CALL",
+      "body": "CALL ${1:program}(${2:args})"
+    },
+    "SCALL": {
+      "scope": "as",
+      "prefix": "SCALL",
+      "body": "SCALL ${1:program}(${2:args})",
+      "description":"Calls a program with a string variable"
+    },
+    "RETURN": {
+      "scope": "as",
+      "prefix": "RETURN",
+      "body": "RETURN"
+    },
+    "WAIT": {
+      "scope": "as",
+      "prefix": "WAIT",
+      "body": "WAIT ${1:a==b}"
+    },
+    "TWAIT": {
+      "scope": "as",
+      "prefix": "TWAIT",
+      "body": "TWAIT ${1:seconds}"
+    },
+    "MVWAIT": {
+      "scope": "as",
+      "prefix": "MVWAIT",
+      "body": "MVWAIT ${1:ammount} ${2|mm,s|}",
+      "description":"Suspends the execution of the next program step until robot is at specified distance or time of the current motion destination"
+    },
+    "PAUSE": {
+      "scope": "as",
+      "prefix": "PAUSE",
+      "body": "PAUSE",
+      "description":"Stops program execution. It can be resumed."
+    },
+    "HALT": {
+      "scope": "as",
+      "prefix": "HALT",
+      "body": "HALT",
+      "description":"Stops program execution. It can NOT be resumed."
+    },
+    "STOP": {
+      "scope": "as",
+      "prefix": "STOP",
+      "body": "STOP",
+      "description":"Stops program execution cycle"
+    },
+    "LOCK": {
+      "scope": "as",
+      "prefix": "LOCK",
+      "body": "LOCK"
+    },
+    "RESET": {
+      "scope": "as",
+      "prefix": "RESET",
+      "body": "RESET"
+    },
+    "SIG": {
+      "scope": "as",
+      "prefix": "SIG",
+      "body": "SIG(${1:number})",
+      "description":"Activate signal"
+    },
+    "SIGNAL": {
+      "scope": "as",
+      "prefix": "SIGNAL",
+      "body": "SIGNAL(${1:number})",
+      "description":"Check signal state"
+    },
+    "PULSE": {
+      "scope": "as",
+      "prefix": "PULSE",
+      "body": "PULSE ${1:signal},${2:time(seconds)}",
+      "description":"Activate signal for ammount of time in seconds. Signals can only be turned on."
+    },
+    "DLYSIG": {
+      "scope": "as",
+      "prefix": "DLYSIG",
+      "body": "DLYSIG ${1:signal},${2:time(seconds)}",
+      "description":"Activate signal after ammount of time in seconds. Signals can be turned on and off."
+    },
+    "RUNMASK": {
+      "scope": "as",
+      "prefix": "RUNMASK",
+      "body": "RUNMASK ${1:start signal},${2:number of signals}",
+      "description":"Masks signals so that after leaving the program, all the signals activated within the program are turned off again."
+    },
+    "BITS": {
+      "scope": "as",
+      "prefix": "BITS",
+      "body": "BITS ${1:start signal},${2:number of signals} = ${3:value}",
+      "description":"Maps a value to binary on specified output signals."
+    },
+    "SWAIT": {
+      "scope": "as",
+      "prefix": "SWAIT",
+      "body": "SWAIT ${1:signal}",
+      "description":"Stops program execution until the signal state is met. A '-' minus sign can be used to specify that the desired state of signal is OFF."
+    },
+    "ON": {
+      "scope": "as",
+      "prefix": "ON",
+      "body": "ON ${1:mode} ${2:signal} ${3|CALL program,GOTO label|}, ${4:priority}",
+      "description":"Monitors the state of the signal during program execution, and performs the action when the signal is turned to the desired state."
+    },
+    "IGNORE": {
+      "scope": "as",
+      "prefix": "IGNORE",
+      "body": "IGNORE",
+      "description":"Cancels the last ON instruction."
+    },
+    "SOUT": {
+      "scope": "as",
+      "prefix": "SOUT",
+      "body": "SOUT ${1:signal} = ${2:signal}",
+      "description":"Equals signals to another signal value."
+    },
+    "PRINT": {
+      "scope": "as",
+      "prefix": "PRINT",
+      "body": "PRINT \"${1:message}\"",
+      "description":"Print message on screen."
+    },
+    "TYPE": {
+      "scope": "as",
+      "prefix": "TYPE",
+      "body": "TYPE \"${1:message}\"",
+      "description":"Type message on screen."
+    },
+    "PROMPT": {
+      "scope": "as",
+      "prefix": "PROMPT",
+      "body": "PROMPT \"${1:message}\",${2:variable}",
+      "description":"Show a popup message on screen and wait for user input. The input is saved in the variable specified."
+    },
+    "IFWPRINT": {
+      "scope": "as",
+      "prefix": "IFWPRINT",
+      "body": "IFWPRINT ${1:pos1},${2:pos2},${3:pos3} = \"${4:message}\"",
+      "description":"Print message on interface panel."
+    },
+    "IFPWOVERWRITE": {
+      "scope": "as",
+      "prefix": "IFPWOVERWRITE",
+      "body": "IFPWOVERWRITE ${1:pos1},${2:pos2},${3:pos3} = \"${4:message}\"",
+      "description":"Overwirte message on interface panel."
+    },
+    "IFPLABEL": {
+      "scope": "as",
+      "prefix": "IFPLABEL",
+      "body": "IFPLABEL ${1:pos1},${2:pos2},${3:pos3} = \"${4:message}\"",
+      "description":"Print label on interface panel."
+    },
+    "IFPTITLE": {
+      "scope": "as",
+      "prefix": "IFPTITLE",
+      "body": "IFPTITLE ${1:pos1},${2:pos2},${3:pos3} = \"${4:message}\"",
+      "description":"Print title on interface panel."
+    },
+    "HERE": {
+      "scope": "as",
+      "prefix": "HERE",
+      "body": "HERE",
+      "description":"Returns current robot position."
+    },
+    "POINT": {
+      "scope": "as",
+      "prefix": "POINT",
+      "body": "POINT ${1:name} = ${2:value}",
+      "description":"Creates a point variable."
+    },
+    "DECOMPOSE": {
+      "scope": "as",
+      "prefix": "DECOMPOSE",
+      "body": "DECOMPOSE ${1:arrayVar}[${2:startIndex}] = ${3:point}",
+      "description":"Decompose a point into its components and stores them in an array, starting at specified index."
+    },
+    "BASE": {
+      "scope": "as",
+      "prefix": "BASE",
+      "body": "BASE ${1:base}",
+      "description":"Sets active base to specified frame."
+    },
+    "TOOL": {
+      "scope": "as",
+      "prefix": "TOOL",
+      "body": "TOOL ${1:tool}",
+      "description":"Sets active tool to specified frame."
+    },
+    "SETHOME": {
+      "scope": "as",
+      "prefix": "SETHOME",
+      "body": "SETHOME ${1:point}",
+      "description":"Sets home position 1 to specified point."
+    },
+    "SETHOME2": {
+      "scope": "as",
+      "prefix": "SETHOME2",
+      "body": "SETHOME2 ${1:point}",
+      "description":"Sets home position 2 to specified point."
+    },
+    "TIMER (set)": {
+      "scope": "as",
+      "prefix": "TIMER (set)",
+      "body": "TIMER ${1:number} = ${1:seconds}",
+      "description":"Activates a timer with a number ID to specified timestamp. Timer is instantly activated and starts counting."
+    },
+    "TIMER (compare)": {
+      "scope": "as",
+      "prefix": "TIMER (compare)",
+      "body": "TIMER(${1:number}) == ${1:timeValue(s)}",
+      "description":"Compares a timer with a number ID second count to a time."
+    },
+    "UTIMER (set)": {
+      "scope": "as",
+      "prefix": "UTIMER (set)",
+      "body": "UTIMER @${1:name} = ${1:seconds}",
+      "description":"Activates a timer with a string ID to specified timestamp. Timer is instantly activated and starts counting."
+    },
+    "UTIMER (compare)": {
+      "scope": "as",
+      "prefix": "UTIMER (compare)",
+      "body": "UTIMER(@${1:number}) == ${1:timeValue(s)}",
+      "description":"Compares a timer with a string ID second count to a time."
+    },
+    "WEIGHT": {
+      "scope": "as",
+      "prefix": "WEIGHT",
+      "body": "WEIGHT ${1:mass},${2:x-direction of cog}, ${3:y-direction of cog}, ${4:<-direction of cog}",
+      "description":"Sets the load values on the gripper. Mass in kg and COG values in mm. COG values are optional."
+    },
+    "MC": {
+      "scope": "as",
+      "prefix": "MC",
+      "body": "MC ${1:command}",
+      "description":"Executes a monitor command."
+    },
+    "TPLIGHT": {
+      "scope": "as",
+      "prefix": "TPLIGHT",
+      "body": "TPLIGHT",
+      "description":"Inverts the state of the backlight on the Teach Pendant."
+    },
+    "DEST": {
+      "scope": "as",
+      "prefix": "DEST",
+      "body": "DEST",
+      "description":"Returns the transformation location of the current robot motion."
+    },
+    "#DEST": {
+      "scope": "as",
+      "prefix": "#DEST",
+      "body": "#DEST",
+      "description":"Returns the precision location of the current robot motion."
+    },
+    "FRAME": {
+      "scope": "as",
+      "prefix": "FRAME",
+      "body": "FRAME ${1:originPoint},${2:xDirectionPoint},${3:yDirectionPoint},${4:zDirectionPoint}",
+      "description":"Returns a FRAME from specified points and directions."
+    },
+    "NULL": {
+      "scope": "as",
+      "prefix": "NULL",
+      "body": "NULL",
+      "description":"Returns a transformation value with all its components initialized to zero."
+    },
+    "DISTANCE": {
+      "scope": "as",
+      "prefix": "DISTANCE",
+      "body": "DISTANCE (${1:point},${2:point})",
+      "description":"Returns the length of a straight line between points."
+    },
+    "DX": {
+      "scope": "as",
+      "prefix": "DX",
+      "body": "DX(${1:point})",
+      "description":"Returns the X component of a point."
+    },
+    "DY": {
+      "scope": "as",
+      "prefix": "DY",
+      "body": "DY(${1:point})",
+      "description":"Returns the Y component of a point."
+    },
+    "DZ": {
+      "scope": "as",
+      "prefix": "DZ",
+      "body": "DZ(${1:point})",
+      "description":"Returns the Z component of a point."
+    },
+    "DEXT": {
+      "scope": "as",
+      "prefix": "DEXT",
+      "body": "DEXT(${1:point},${2:componentNumber})",
+      "description":"Returns the specified component of a point.1:X/JT1 to 6:T/JT6 or 7:JT7."
+    },
+    "ASC": {
+      "scope": "as",
+      "prefix": "ASC",
+      "body": "ASC(\"${1:string}\",${2:charIndex})",
+      "description":"Returns the specified char's ASCII value. String character index starts at index 1."
+    },
+    "LEN": {
+      "scope": "as",
+      "prefix": "LEN",
+      "body": "LEN(\"${1:string}\")",
+      "description":"Returns the length of a string."
+    },
+    "VAL": {
+      "scope": "as",
+      "prefix": "VAL",
+      "body": "VAL(\"${1:string}\",${2:code})",
+      "description":"Returns the numeric value of a string number, in specified base."
+    },
+    "INSTR": {
+      "scope": "as",
+      "prefix": "INSTR",
+      "body": "INSTR(\"${1:start}\",\"${2:original}\",\"${3:sample}\")",
+      "description":"Returns the index of the first character where the sample string was found on the original string."
+    },
+    "MAXVAL": {
+      "scope": "as",
+      "prefix": "MAXVAL",
+      "body": "MAXVAL(${1:value},${2:value})",
+      "description":"Returns the biggest value among options."
+    },
+    "MINVAL": {
+      "scope": "as",
+      "prefix": "MINVAL",
+      "body": "MINVAL(${1:value},${2:value})",
+      "description":"Returns the lowest value among options."
+    },
+    "INT": {
+      "scope": "as",
+      "prefix": "INT",
+      "body": "INT(${1:value})",
+      "description":"Returns the nearest integer value of a real number, floored."
+    },
+    "SWITCH": {
+      "scope": "as",
+      "prefix": "SWITCH",
+      "body": "SWITCH(${1:switch})",
+      "description":"Returns the value (ON/OFF) of the specified system switch."
+    },
+    "TASK": {
+      "scope": "as",
+      "prefix": "TASK",
+      "body": "TASK(${1:program})",
+      "description":"Returns the execution status of a Program or a pc Program. 1 or 2 are entered to represent the robot programs and 1001 to 1005 are entered to represent PC programs. 0:No execution, 1:executing, 2:hold, 3:waiting stepper."
+    },
+    "ERROR": {
+      "scope": "as",
+      "prefix": "ERROR",
+      "body": "ERROR",
+      "description":"Returns the code number and message of the active error."
+    },
+    "MSPEED": {
+      "scope": "as",
+      "prefix": "MSPEED",
+      "body": "MSPEED",
+      "description":"Returns the current monitor speed in %."
+    },
+    "INRANGE": {
+      "scope": "as",
+      "prefix": "INRANGE",
+      "body": "INRANGE(${1:point})",
+      "description":"Returns if the point is in the working envelope of the robot axis.0:in work envelope, 1:JT1 out, 2:JT2 out, 4:JT3 out, 8:JT4 out, 16:JT5 out, 32:JT6 out, 16384:exagerated, 32768:composed link not reachable."
+    },
+    "$CHR": {
+      "scope": "as",
+      "prefix": "$CHR",
+      "body": "$CHR(${1:value})",
+      "description":"Returns the ASCII character of the value specified."
+    },
+    "$SPACE": {
+      "scope": "as",
+      "prefix": "$SPACE",
+      "body": "$SPACE(${1:ammount})",
+      "description":"Returns n ammount of white space characters"
+    },
+    "$LEFT": {
+      "scope": "as",
+      "prefix": "$LEFT",
+      "body": "$LEFT(\"${1:string}\",${2:index})",
+      "description":"Returns a string containg everything to the left of the specified index."
+    },
+    "$RIGHT": {
+      "scope": "as",
+      "prefix": "$RIGHT",
+      "body": "$RIGHT(\"${1:string}\",${2:index})",
+      "description":"Returns a string containg everything to the right of the specified index."
+    },
+    "$MID": {
+      "scope": "as",
+      "prefix": "$MID",
+      "body": "$MID(\"${1:string}\",${2:startIndex},${3:ammount})",
+      "description":"Returns a string containg n ammount of chars to the right of the specified index."
+    },
+    "$DATE": {
+      "scope": "as",
+      "prefix": "$DATE",
+      "body": "$DATE(${1:format})",
+      "description":"Returns the system date in specified format.1:mm/dd/yyyy, 2:dd/mm/yyyy, 3:yyyy/mm/dd."
+    },
+    "$TIME": {
+      "scope": "as",
+      "prefix": "$TIME",
+      "body": "$TIME",
+      "description":"Returns the system time in format hh:mm:ss."
+    },
+    "PCSTATUS": {
+      "scope": "as",
+      "prefix": "PCSTATUS",
+      "body": "PCSTATUS ${1:PC number}",
+      "description":"Returns the status of the specified PC program."
+    },
+    "PCEXECUTE": {
+      "scope": "as",
+      "prefix": "PCEXECUTE",
+      "body": "PCEXECUTE ${1:name}",
+      "description":"Executes the specified PC program."
+    },
+    "PCABORT": {
+      "scope": "as",
+      "prefix": "PCABORT",
+      "body": "PCABORT ${1:PC number}",
+      "description":"Aborts the specified PC program."
+    },
+    "PCKILL": {
+      "scope": "as",
+      "prefix": "PCKILL",
+      "body": "PCKILL ${1:PC number}",
+      "description":"Kills the specified PC program."
+    },
+    "ABS": {
+      "scope": "as",
+      "prefix": "ABS",
+      "body": "ABS ${1:value}",
+      "description":"Returns the absolute value of a value."
+    },
+    "SQRT": {
+      "scope": "as",
+      "prefix": "SQRT",
+      "body": "SQRT ${1:value}",
+      "description":"Returns the square root of a value."
+    },
+    "PI": {
+      "scope": "as",
+      "prefix": "PI",
+      "body": "PI",
+      "description":"Returns the value of Pi."
+    },
+    "SIN": {
+      "scope": "as",
+      "prefix": "SIN",
+      "body": "SIN ${1:value}",
+      "description":"Returns the sin of a value."
+    },
+    "COS": {
+      "scope": "as",
+      "prefix": "COS",
+      "body": "COS ${1:value}",
+      "description":"Returns the cos of a value."
+    },
+    "ATAN2": {
+      "scope": "as",
+      "prefix": "ATAN2",
+      "body": "ATAN2 ${1:value}",
+      "description":"Returns the arctangent of a value."
+    },
+    "RANDOM": {
+      "scope": "as",
+      "prefix": "RANDOM",
+      "body": "RANDOM",
+      "description":"Returns a random value between 0.0 and 1.0."
+    },
+    "AND": {
+      "scope": "as",
+      "prefix": "AND",
+      "body": "AND"
+    },
+    "OR": {
+      "scope": "as",
+      "prefix": "OR",
+      "body": "OR"
+    },
+    "XOR": {
+      "scope": "as",
+      "prefix": "XOR",
+      "body": "XOR"
+    },
+    "BOR": {
+      "scope": "as",
+      "prefix": "BOR",
+      "body": "BOR"
+    },
+    "BAND": {
+      "scope": "as",
+      "prefix": "BAND",
+      "body": "BAND"
+    },
+    "BXOR": {
+      "scope": "as",
+      "prefix": "BXOR",
+      "body": "BXOR"
+    },
+    "NOT": {
+      "scope": "as",
+      "prefix": "NOT",
+      "body": "NOT"
     }
   }
