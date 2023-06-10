@@ -13,7 +13,7 @@ class projectFormatter{
         const text = document.getText();
 
         // Format the code
-        const formattedText = formatCode(text, "as");
+        const formattedText = formatCode(text, "as",document.lineCount - 1);
 
         // Create a TextEdit representing the formatting changes
         const edit = new vscode.TextEdit(fullRange, formattedText);
@@ -23,7 +23,7 @@ class projectFormatter{
     }
 };
 
-function formatCode(code, languageId) {
+function formatCode(code, languageId, lineCount) {
 	// Indentation Rules
 	increaseIndentPattern = [".PROGRAM","THEN","ELSE","DO","TO","OF","VALUE","ANY","SVALUE",".TRANS",".JOINTS",".REALS",".STRINGS",".INTEGER",".ROBOTDATA1",".OPE_INFO1",".SYSDATA",".CONDITION",".AUXDATA",".INTER_PANEL_D",".INTER_PANEL_TITLE",".INTER_PANEL_COLOR_D",".SIG_COMMENT"];
 	decreaseIndentPattern = [".END","END","ELSE","UNTIL","VALUE","ANY","SVALUE"];
@@ -40,7 +40,7 @@ function formatCode(code, languageId) {
 
 		// Check if line is empty and replace with comment
 		let testLine = lines[i].trimStart();
-		if (testLine==""){
+		if (testLine==""&& lineCount!=i){
 			lines[i]=";\r";			
 		};
 		// Check if it is a comment line
