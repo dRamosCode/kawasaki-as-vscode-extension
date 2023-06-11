@@ -64,9 +64,35 @@
 			  },
 			  {
 				"id": "interface",
-				"name": "Interface Panel Programs"
+				"name": "IFP Programs"
 			  }
 			]
+		},
+		"commands": [
+			{
+			  "command": "project-structure.refreshPrograms",
+			  "title": "Refresh Programs",
+			  "icon": "$(refresh)"
+			},
+			{
+				"command": "project-structure.copyProgram",
+				"title": "Copy Program",
+				"icon": "$(copy)"
+			  }
+		],
+		"menus": {
+		  "view/title": [
+			{
+			  "command": "project-structure.refreshPrograms",
+			  "group": "navigation"
+			}
+		  ],
+		  "view/item/context": [
+			{
+				"command": "project-structure.copyProgram",
+				"group": "inline"
+			}
+		  ]
 		}
 	}
 }

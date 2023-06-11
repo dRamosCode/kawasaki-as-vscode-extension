@@ -15,7 +15,7 @@ function activate(context) {
 	vscode.workspace.onDidChangeConfiguration(themeGenerator);
 
 	// Project structure view
-	sidebarGenerator();
+	sidebarGenerator(context);
 
 	// Project formatting
 	const projectFormatter = new ProjectFormatter();

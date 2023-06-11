@@ -20,7 +20,8 @@ class ProjectTreeProvider{
 		return this.data.map(item => {
 		  return {
 			label: item.label,
-			line: item.line
+			line: item.line,
+			end: item.end
 		  };
 		});
 	  }
