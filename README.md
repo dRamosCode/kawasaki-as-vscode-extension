@@ -12,8 +12,8 @@ This VSCode extension provides language support for Kawasaki AS programming lang
 The extension provides syntax highlighting for Kawasaki AS code, making it easier to read and understand. It provides different dark and light theme colors, automatically chosen depending on user selected VSCode Theme.
 
 <p align="center" > 
-<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/themeLight.png?raw=true" style="height:20em; padding:1em"></img>
-<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/themeDark.png?raw=true" style="height:20em; padding:1em"></img></p>
+<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/themeLight.png?raw=true" style="height:30em; padding:1em"></img>
+<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/themeDark.png?raw=true" style="height:30em; padding:1em"></img></p>
 
 ## Code Snippets
 
