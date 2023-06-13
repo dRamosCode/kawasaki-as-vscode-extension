@@ -11,31 +11,47 @@ This VSCode extension provides language support for Kawasaki AS programming lang
 
 The extension provides syntax highlighting for Kawasaki AS code, making it easier to read and understand. It provides different dark and light theme colors, automatically chosen depending on user selected VSCode Theme.
 
+<p align="center" > 
+<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/themeLight.png?raw=true" style="height:20em; padding:1em"></img>
+<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/themeDark.png?raw=true" style="height:20em; padding:1em"></img></p>
+
 ## Code Snippets
 
-Access a collection of code snippets specific to Kawasaki AS. Snippets include descriptions and comments to help you understand their usage.
+Access a collection of code snippets specific to Kawasaki AS language. Snippets include descriptions and comments to help you understand their usage. Quick access via `ctrl` + `space` key shortcut. Accept snippets by pressing `tab` or `Enter`.
+
+<p align="center"><img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/snippets.gif?raw=true"></img></p>
 
 ## Code Formatting
 
-Format your Kawasaki AS code according to a consistent style to improve code readability and maintainability.
+Automatically format your Kawasaki AS code according to a consistent style to improve code readability and maintainability, while writing.
+
+<p align="center"><img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/textFormat.gif?raw=true"></img></p>
 
 ## Auto Formatter
 
-Automatically format your Kawasaki AS code on save, ensuring consistent formatting throughout your project.
+Automatically format your Kawasaki AS code `on save` or by `right click` command, ensuring consistent formatting throughout your project.
+
+<p align="center"><img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/autoformat.gif?raw=true"></img></p>
 
 ## Jump to Definition
 
-Quickly navigate to the definition of a program or a `GOTO` label in your Kawasaki AS codebase with a single click.
+Quickly navigate to the definition of a program or a `GOTO` label in your Kawasaki AS codebase with a `ctrl` + `click`.
+
+<p align="center"><img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/jumpTo.gif?raw=true"></img></p>
 
 ## Custom Sidebar
 
 ### Program tree
 
-Get a project programs tree view in the sidebar, allowing you to easily navigate and switch between different programs in your Kawasaki AS project.
+Get a quick tree view of the project programs in the sidebar, allowing you to easily navigate and switch between different programs in your project.
+
+<p align="center"><img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/programTree.gif?raw=true"></img></p>
 
 ### Copy program to clipboard
 
 A button next to each program on the project makes it possible to copy the desired program to clipboard with a single click.
+
+<p align="center"><img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/copyToClipboard.gif?raw=true"></img></p>
 
 # Installation
 
