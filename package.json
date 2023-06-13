@@ -4,10 +4,11 @@
 	"description": "VSCode Kawasaki AS language support",
 	"version": "1.0.0",
 	"publisher": "dRamosCode",
-	"repository": { 
-  	"type": "git", 
-  	"url": "https://github.com/dRamosCode/kawasaki-as-vscode-extension" 
-	} ,
+	"icon": "./docs/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dRamosCode/kawasaki-as-vscode-extension"
+	},
 	"categories": [
 		"Programming Languages"
 	],
@@ -39,60 +40,60 @@
 		],
 		"snippets": [
 			{
-			  "language": "as",
-			  "path": "./snippets/as.json"
+				"language": "as",
+				"path": "./snippets/as.json"
 			}
-		  ],
+		],
 		"viewsContainers": {
 			"activitybar": [
-			  {
-				"id": "project-structure",
-				"title": "Project Structure",
-				"icon": "./views/AS.png"
-			  }
+				{
+					"id": "project-structure",
+					"title": "Project Structure",
+					"icon": "./views/AS.png"
+				}
 			]
 		},
 		"views": {
 			"project-structure": [
-			  {
-				"id": "user",
-				"name": "User Programs"
-			  },
-			  {
-				"id": "system",
-				"name": "System Programs"
-			  },
-			  {
-				"id": "interface",
-				"name": "IFP Programs"
-			  }
+				{
+					"id": "user",
+					"name": "User Programs"
+				},
+				{
+					"id": "system",
+					"name": "System Programs"
+				},
+				{
+					"id": "interface",
+					"name": "IFP Programs"
+				}
 			]
 		},
 		"commands": [
 			{
-			  "command": "project-structure.refreshPrograms",
-			  "title": "Refresh Programs",
-			  "icon": "$(refresh)"
+				"command": "project-structure.refreshPrograms",
+				"title": "Refresh Programs",
+				"icon": "$(refresh)"
 			},
 			{
 				"command": "project-structure.copyProgram",
 				"title": "Copy Program",
 				"icon": "$(copy)"
-			  }
+			}
 		],
 		"menus": {
-		  "view/title": [
-			{
-			  "command": "project-structure.refreshPrograms",
-			  "group": "navigation"
-			}
-		  ],
-		  "view/item/context": [
-			{
-				"command": "project-structure.copyProgram",
-				"group": "inline"
-			}
-		  ]
+			"view/title": [
+				{
+					"command": "project-structure.refreshPrograms",
+					"group": "navigation"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "project-structure.copyProgram",
+					"group": "inline"
+				}
+			]
 		}
 	}
 }
