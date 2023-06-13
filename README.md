@@ -1,5 +1,5 @@
 <p align="center" > 
-<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/ASLogo.png?raw=true" style="box-shadow:0 0 15px"></img></p>
+<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/ASLogo.png?raw=true" style="box-shadow:0 0 3em black; height:20em"></img></p>
 
 <h1 align="center">Easy to use Ip Address Manager</h1>
 
