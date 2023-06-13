@@ -1,9 +1,7 @@
 <p align="center" > 
-<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/ASLogo.png?raw=true" style="box-shadow:0 0 3em black; height:20em"></img></p>
+<img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/ASLogo.png?raw=true" style="box-shadow:0 0 1.5em grey; height:20em; border-radius:10%"></img></p>
 
-<h1 align="center">Easy to use Ip Address Manager</h1>
-
-# Kawasaki AS Language Support for VSCode
+<h1 align="center">Kawasaki AS Language Support for VSCode</h1>
 
 This VSCode extension provides language support for Kawasaki AS programming language, offering a range of features to enhance your development experience.
 
