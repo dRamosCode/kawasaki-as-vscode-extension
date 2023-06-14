@@ -9,7 +9,6 @@ const programDefinition = require("./programDefinition.js");
 
 // Main function of the extension
 function activate(context) {
-
 	// Override theme semantic colors
 	themeGenerator(context);
 	vscode.workspace.onDidChangeConfiguration(themeGenerator);
@@ -19,13 +18,13 @@ function activate(context) {
 
 	// Project formatting
 	const projectFormatter = new ProjectFormatter();
-	vscode.languages.registerDocumentFormattingEditProvider({ scheme: 'file', language: 'as' }, projectFormatter);
+	vscode.languages.registerDocumentFormattingEditProvider({ scheme: "file", language: "as" }, projectFormatter);
 
 	// Jump to definition
-	vscode.languages.registerDefinitionProvider('as', {
+	vscode.languages.registerDefinitionProvider("as", {
 		provideDefinition(document, position, token) {
 			return programDefinition(document, position, token);
-		}
+		},
 	});
 
 	// Hover actions (future improvement)
