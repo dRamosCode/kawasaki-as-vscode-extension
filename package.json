@@ -1,6 +1,6 @@
 {
 	"name": "kawasaki-as-language",
-	"displayName": "Kawasaki-AS-Language",
+	"displayName": "Kawasaki AS Language",
 	"description": "VSCode Kawasaki AS language support",
 	"version": "1.0.0",
 	"publisher": "dRamosCode",
