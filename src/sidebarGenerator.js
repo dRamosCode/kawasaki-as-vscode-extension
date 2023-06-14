@@ -30,17 +30,17 @@ const sidebarGenerator = function(context){
 	vscode.commands.registerCommand('project-structure.copyProgram', (treeItem) =>{
 		// Get selected program name
 		let program = treeItem;
-		let document = vscode.window.activeTextEditor.document;
+		let myDocument = vscode.window.activeTextEditor.document;
 
 		// Read document
 		let project = new Project(vscode.window.activeTextEditor.document);		
 		project.getStructure();
 
 		// Find program range
-		const start = document.lineAt(program.line).range.start;
-		const end = document.lineAt(program.end).range.end;
+		const start = myDocument.lineAt(program.line).range.start;
+		const end = myDocument.lineAt(program.end).range.end;
 		const range = new vscode.Range(start, end);
-		const text = document.getText(range);
+		const text = myDocument.getText(range);
 
 		// Copy to clipboard program
 		vscode.env.clipboard.writeText(text+"\n");
@@ -51,20 +51,26 @@ const sidebarGenerator = function(context){
 }
 
 function fillSidebar(){
-	// Get active text editor structure
-	let project = new Project(vscode.window.activeTextEditor.document);
-	project.getStructure();
+	// Wait for active text editor to load
+	setTimeout(() => {
+		// Check valid editor
+		const activeEditor = vscode.window.activeTextEditor;
+		if (activeEditor && activeEditor.document) {
+			// Get active text editor structure
+			let project = new Project(vscode.window.activeTextEditor.document);
+			project.getStructure();
 
-	// Create Tree Structure Providers
-	let userTreeProvider = new ProjectTreeProvider(project.userPrograms);
-	let systemTreeProvider = new ProjectTreeProvider(project.systemPrograms);
-	let interfaceTreeProvider = new ProjectTreeProvider(project.interfacePrograms);
+			// Create Tree Structure Providers
+			let userTreeProvider = new ProjectTreeProvider(project.userPrograms);
+			let systemTreeProvider = new ProjectTreeProvider(project.systemPrograms);
+			let interfaceTreeProvider = new ProjectTreeProvider(project.interfacePrograms);
 
-	// Add project structure to sidebar
-	const userPrograms = vscode.window.createTreeView('user', { treeDataProvider: userTreeProvider });
-	const systemPrograms = vscode.window.createTreeView('system', { treeDataProvider: systemTreeProvider });
-	const interfacePrograms = vscode.window.createTreeView('interface', { treeDataProvider: interfaceTreeProvider });
-
+			// Add project structure to sidebar
+			const userPrograms = vscode.window.createTreeView('user', { treeDataProvider: userTreeProvider });
+			const systemPrograms = vscode.window.createTreeView('system', { treeDataProvider: systemTreeProvider });
+			const interfacePrograms = vscode.window.createTreeView('interface', { treeDataProvider: interfaceTreeProvider });
+		}
+	}, 1000);
 }
 
 module.exports = sidebarGenerator;
