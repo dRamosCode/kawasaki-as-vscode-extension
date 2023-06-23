@@ -61,8 +61,11 @@ function formatCode(code, languageId, lineCount) {
 
 	// Format code
 	for (let i = 0; i < lines.length; i++) {
-		// Check if line is empty and replace with comment
+		// Create test line without start whitespaces and end line comments
 		let testLine = lines[i].trimStart();
+		testLine = testLine.split(";")[0];
+
+		// Check if line is empty and replace with comment
 		if (testLine == "" && lineCount != i) {
 			lines[i] = ";\r";
 		}
@@ -82,7 +85,7 @@ function formatCode(code, languageId, lineCount) {
 		// Loop through decrease patterns and see if matches
 		decreaseIndentPattern.forEach((pattern, index) => {
 			const regExpPattern = new RegExp("\\b" + pattern + "\\b");
-			if (regExpPattern.test(lines[i]) == true && comment == false) {
+			if (regExpPattern.test(testLine) == true && comment == false) {
 				indentationLevel--;
 				if (indentationLevel < 0) {
 					indentationLevel = 0;
@@ -103,7 +106,7 @@ function formatCode(code, languageId, lineCount) {
 		increaseIndentPattern.forEach((pattern, index) => {
 			const regExpPattern = new RegExp("\\b" + pattern + "\\b");
 			if (
-				(regExpPattern.test(lines[i]) == true && comment == false && pattern.charAt(0) != ".") ||
+				(regExpPattern.test(testLine) == true && comment == false && pattern.charAt(0) != ".") ||
 				(pattern.charAt(0) == "." && lines[i].charAt(0) == "." && lines[i].includes(pattern)) ||
 				program == true
 			) {
