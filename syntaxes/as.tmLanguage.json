@@ -36,7 +36,7 @@
 		},
 		"motion": {
 			"name": "keyword.control.motion",
-			"match": "(\\bJMOVE\\b|\\bLMOVE\\b|\\bDELAY\\b|\\bSTABLE\\b|\\bJAPPRO\\b|\\bLAPPRO\\b|\\bJDEPART\\b|\\bLDEPART\\b|\\bHOME\\b|\\b\\bDRIVE\\b\\b|\\bDRAW\\b|\\bTDRAW\\b|\\bALIGN\\b|\\bHMOVE\\b|\\bXMOVE\\b|\\TILL\\b|\\bC1MOVE\\b|\\bC2MOVE\\b)"
+			"match": "(\\bJMOVE\\b|\\bLMOVE\\b|\\bDELAY\\b|\\bSTABLE\\b|\\bJAPPRO\\b|\\bLAPPRO\\b|\\bJDEPART\\b|\\bLDEPART\\b|\\bHOME\\b|\\b\\bDRIVE\\b\\b|\\bDRAW\\b|\\bTDRAW\\b|\\bALIGN\\b|\\bHMOVE\\b|\\bXMOVE\\b|\\TILL\\b|\\bC1MOVE\\b|\\bC2MOVE\\b|\\TRANS\\b)"
 		},
 		"speed": {
 			"name": "keyword.control.speed",
