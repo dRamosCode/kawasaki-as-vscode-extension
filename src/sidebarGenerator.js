@@ -1,18 +1,18 @@
 const vscode = require("vscode");
-const Project = require("./Modules/project.js")
-const ProjectTreeProvider = require("./Modules/projectTreeProvider.js")
+const Project = require("./Modules/project.js");
+const ProjectTreeProvider = require("./Modules/projectTreeProvider.js");
 
 /* Sidebar generator*/
 
-const sidebarGenerator = function(context){
+const sidebarGenerator = function (context) {
 	// Generate structure
 	fillSidebar();
 
 	// Update project whenever text editor changes
 	vscode.window.onDidChangeActiveTextEditor(fillSidebar);
-	
+
 	// Register the command to show program definition on sidebar click
-	vscode.commands.registerCommand('extension.showLine', lineNumber => {
+	vscode.commands.registerCommand("extension.showLine", (lineNumber) => {
 		const activeTextEditor = vscode.window.activeTextEditor;
 		if (activeTextEditor) {
 			const position = new vscode.Position(lineNumber, 0);
@@ -22,18 +22,18 @@ const sidebarGenerator = function(context){
 	});
 
 	// Register the command to refresh the program list
-	vscode.commands.registerCommand('project-structure.refreshPrograms', function(){
+	vscode.commands.registerCommand("project-structure.refreshPrograms", function () {
 		fillSidebar();
 	});
 
 	// Register the command to copy the program
-	vscode.commands.registerCommand('project-structure.copyProgram', (treeItem) =>{
+	vscode.commands.registerCommand("project-structure.copyProgram", (treeItem) => {
 		// Get selected program name
 		let program = treeItem;
 		let myDocument = vscode.window.activeTextEditor.document;
 
 		// Read document
-		let project = new Project(vscode.window.activeTextEditor.document);		
+		let project = new Project(vscode.window.activeTextEditor.document);
 		project.getStructure();
 
 		// Find program range
@@ -43,14 +43,25 @@ const sidebarGenerator = function(context){
 		const text = myDocument.getText(range);
 
 		// Copy to clipboard program
-		vscode.env.clipboard.writeText(text+"\n");
+		vscode.env.clipboard.writeText(text + "\n");
 
 		// Cofirmation message
-		vscode.window.showInformationMessage(program.label+" copied to clipboard.");
+		vscode.window.showInformationMessage(program.label + " copied to clipboard.");
 	});
-}
+};
 
-function fillSidebar(){
+function fillSidebar() {
+	// Fill sidebar with temporary while it is loading
+	// Create Tree Structure Providers
+	let userTreeProvider = new ProjectTreeProvider([{ label: "Loading..." }]);
+	let systemTreeProvider = new ProjectTreeProvider([{ label: "Loading..." }]);
+	let interfaceTreeProvider = new ProjectTreeProvider([{ label: "Loading..." }]);
+
+	// Add project structure to sidebar
+	const userPrograms = vscode.window.createTreeView("user", { treeDataProvider: userTreeProvider });
+	const systemPrograms = vscode.window.createTreeView("system", { treeDataProvider: systemTreeProvider });
+	const interfacePrograms = vscode.window.createTreeView("interface", { treeDataProvider: interfaceTreeProvider });
+
 	// Wait for active text editor to load
 	setTimeout(() => {
 		// Check valid editor
@@ -66,9 +77,9 @@ function fillSidebar(){
 			let interfaceTreeProvider = new ProjectTreeProvider(project.interfacePrograms);
 
 			// Add project structure to sidebar
-			const userPrograms = vscode.window.createTreeView('user', { treeDataProvider: userTreeProvider });
-			const systemPrograms = vscode.window.createTreeView('system', { treeDataProvider: systemTreeProvider });
-			const interfacePrograms = vscode.window.createTreeView('interface', { treeDataProvider: interfaceTreeProvider });
+			const userPrograms = vscode.window.createTreeView("user", { treeDataProvider: userTreeProvider });
+			const systemPrograms = vscode.window.createTreeView("system", { treeDataProvider: systemTreeProvider });
+			const interfacePrograms = vscode.window.createTreeView("interface", { treeDataProvider: interfaceTreeProvider });
 		}
 	}, 1000);
 }
