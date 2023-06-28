@@ -6,6 +6,7 @@ const themeGenerator = require("./themeGenerator.js");
 const sidebarGenerator = require("./sidebarGenerator.js");
 const ProjectFormatter = require("./Modules/projectFormatter.js");
 const programDefinition = require("./programDefinition.js");
+const blockComments = require("./blockComments.js");
 
 // Main function of the extension
 function activate(context) {
@@ -27,14 +28,8 @@ function activate(context) {
 		},
 	});
 
-	// Hover actions (future improvement)
-	/*vscode.languages.registerHoverProvider('as', {
-		provideHover(document, position, token) {
-		  return {
-			contents: []
-		  };
-		}
-	});*/
+	// Block comments
+	blockComments(context);
 }
 
 module.exports = {

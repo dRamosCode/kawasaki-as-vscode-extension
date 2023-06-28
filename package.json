@@ -79,6 +79,10 @@
 				"command": "project-structure.copyProgram",
 				"title": "Copy Program",
 				"icon": "$(copy)"
+			},
+			{
+				"command": "as.commentLines",
+				"title": "Comment Lines"
 			}
 		],
 		"menus": {
@@ -92,6 +96,12 @@
 				{
 					"command": "project-structure.copyProgram",
 					"group": "inline"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "as.commentLines",
+					"group": "edit"
 				}
 			]
 		}
