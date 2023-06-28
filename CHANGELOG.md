@@ -19,3 +19,9 @@ Initial release.
 ### Fixed
 
 - Fix code indentation after commented operators
+
+## [1.0.2] - 2023/06/28
+
+### Fixed
+
+- Fix block comment command appearing on contextual menu in other languages
