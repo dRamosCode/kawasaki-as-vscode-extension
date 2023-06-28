@@ -82,7 +82,8 @@
 			},
 			{
 				"command": "as.commentLines",
-				"title": "Comment Lines"
+				"title": "Comment Lines",
+				"when": "editorLangId == 'as'"
 			}
 		],
 		"menus": {
@@ -101,7 +102,8 @@
 			"editor/context": [
 				{
 					"command": "as.commentLines",
-					"group": "edit"
+					"group": "edit",
+					"when": "editorLangId == 'as'"
 				}
 			]
 		}
