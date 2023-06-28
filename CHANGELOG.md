@@ -7,3 +7,15 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.0.0] - 2023/06/14
 
 Initial release.
+
+## [1.0.1] - 2023/06/28
+
+### Added
+
+- Loading tag while fetching program list
+- TRANS color highlighting
+- Block comment right-click menu command
+
+### Fixed
+
+- Fix code indentation after commented operators
