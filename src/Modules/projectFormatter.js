@@ -63,16 +63,19 @@ function formatCode(code, languageId, lineCount) {
 	for (let i = 0; i < lines.length; i++) {
 		// Create test line without start whitespaces and end line comments
 		let testLine = lines[i].trimStart();
-		testLine = testLine.split(";")[0];
 
-		// Check if line is empty and replace with comment
-		if (testLine == "" && lineCount != i) {
-			lines[i] = ";\r";
-		}
 		// Check if it is a comment line
 		let comment = false;
 		if (testLine[0] == ";") {
 			comment = true;
+		} else {
+			// If it is not a comment line, remove comments from testline
+			testLine = testLine.split(";")[0];
+		}
+
+		// Check if line is empty and replace with comment
+		if (testLine == "" && lineCount != i) {
+			lines[i] = ";\r";
 		}
 
 		// Check if it is a Program definition
