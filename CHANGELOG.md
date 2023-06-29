@@ -25,3 +25,9 @@ Initial release.
 ### Fixed
 
 - Fix block comment command appearing on contextual menu in other languages
+
+## [1.0.3] - 2023/06/29
+
+### Fixed
+
+- Fix comment line dissapearing on code formatting

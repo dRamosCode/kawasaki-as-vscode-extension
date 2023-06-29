@@ -2,7 +2,7 @@
 	"name": "kawasaki-as-language",
 	"displayName": "Kawasaki AS Language",
 	"description": "VSCode Kawasaki AS language support",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"publisher": "dRamosCode",
 	"icon": "./docs/icon.png",
 	"repository": {
