@@ -3,33 +3,34 @@ const path = require("path");
 const fs = require("fs");
 
 const themeGenerator = function (context) {
+	// Delete cached theme configuration and update it with user settings
+	delete require.cache[require.resolve("./../themes/light.js")];
+	delete require.cache[require.resolve("./../themes/dark.js")];
+	const lightTheme = require("./../themes/light.js");
+	const darkTheme = require("./../themes/dark.js");
+
 	// Delay execution to wait for theme loading before parsing it
 	setTimeout(() => {
 		// See if active Theme is light or dark
 		const activeThemeType = vscode.window.activeColorTheme.kind;
 		switch (activeThemeType) {
 			case 1:
-				themePath = "../themes/light.json";
+				chosenTheme = lightTheme;
 				break;
 			case 2:
-				themePath = "../themes/dark.json";
+				chosenTheme = darkTheme;
 				break;
 			case 3:
-				themePath = "../themes/dark.json";
+				chosenTheme = darkTheme;
 				break;
 		}
 
-		// Parse the JSON contents of Theme customization
-		const kawaThemePath = path.join(__dirname, themePath);
-		const kawaThemeContents = fs.readFileSync(kawaThemePath, "utf8");
-		const kawaThemeColors = JSON.parse(kawaThemeContents);
-		const config = vscode.workspace.getConfiguration();
-
 		// Update the semantic token colors
+		const config = vscode.workspace.getConfiguration();
 		config.update(
 			"editor.tokenColorCustomizations",
 			{
-				textMateRules: kawaThemeColors,
+				textMateRules: chosenTheme,
 			},
 			vscode.ConfigurationTarget.Workspace
 		);

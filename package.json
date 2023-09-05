@@ -106,6 +106,298 @@
 					"when": "editorLangId == 'as'"
 				}
 			]
-		}
+		},
+		"configuration": [
+			{
+				"title": "Light Theme Colors",
+				"properties": {
+					"Light Theme.Program": {
+						"type": "string",
+						"default": "#e61300",
+						"description": "Program header and footer.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Flow": {
+						"type": "string",
+						"default": "#3776db",
+						"description": "Program flow conditional statements.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Motion": {
+						"type": "string",
+						"default": "#e39400",
+						"description": "Motion commands.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Speed": {
+						"type": "string",
+						"default": "#a44bde",
+						"description": "Speed commands.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Clamp": {
+						"type": "string",
+						"default": "#dae635",
+						"description": "Clamp control.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Configuration": {
+						"type": "string",
+						"default": "#e64c3e",
+						"description": "Robot position configuration.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Control": {
+						"type": "string",
+						"default": "#e64c3e",
+						"description": "Program flow control.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Signal": {
+						"type": "string",
+						"default": "#00bfb9",
+						"description": "Signal manipulation.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Message": {
+						"type": "string",
+						"default": "#e000c6",
+						"description": "Message printing.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Pose": {
+						"type": "string",
+						"default": "#e39400",
+						"description": "Pose commands.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Real": {
+						"type": "string",
+						"default": "#37e6c3",
+						"description": "Real values.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Strings": {
+						"type": "string",
+						"default": "#00e0b5",
+						"description": "Strings.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.PC": {
+						"type": "string",
+						"default": "#e63f30",
+						"description": "PC program commands.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Arithmetic": {
+						"type": "string",
+						"default": "#e64356",
+						"description": "Arithmetic operations.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Mathematical": {
+						"type": "string",
+						"default": "#43e8c9",
+						"description": "Mathematical operations.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Relational": {
+						"type": "string",
+						"default": "#e63e52",
+						"description": "Relational operations.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Logical": {
+						"type": "string",
+						"default": "#3c7de6",
+						"description": "Logical operations.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Bynary": {
+						"type": "string",
+						"default": "#e68020",
+						"description": "Bynary operations.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Inline comments": {
+						"type": "string",
+						"default": "#50bf52",
+						"description": "Inline comments.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Light Theme.Inline strings": {
+						"type": "string",
+						"default": "#50bf52",
+						"description": "Inline strings.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					}
+				}
+			},
+			{
+				"title": "Dark Theme Colors",
+				"properties": {
+					"Dark Theme.Program": {
+						"type": "string",
+						"default": "#F54D3D",
+						"description": "Program header and footer.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Flow": {
+						"type": "string",
+						"default": "#82B1FF",
+						"description": "Program flow conditional statements.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Motion": {
+						"type": "string",
+						"default": "#FFCB6B",
+						"description": "Motion commands.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Speed": {
+						"type": "string",
+						"default": "#C792EA",
+						"description": "Speed commands.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Clamp": {
+						"type": "string",
+						"default": "#F6FF78",
+						"description": "Clamp control.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Configuration": {
+						"type": "string",
+						"default": "#F9948B",
+						"description": "Robot position configuration.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Control": {
+						"type": "string",
+						"default": "#F9948B",
+						"description": "Program flow control.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Signal": {
+						"type": "string",
+						"default": "#F6FF78",
+						"description": "Signal manipulation.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Message": {
+						"type": "string",
+						"default": "#99EEDE",
+						"description": "Message printing.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Pose": {
+						"type": "string",
+						"default": "#FFCB6B",
+						"description": "Pose commands.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Real": {
+						"type": "string",
+						"default": "#99EEDE",
+						"description": "Real values.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Strings": {
+						"type": "string",
+						"default": "#99EEDE",
+						"description": "String.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.PC": {
+						"type": "string",
+						"default": "#F9948B",
+						"description": "PC program commands.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Arithmetic": {
+						"type": "string",
+						"default": "#fdaeb7",
+						"description": "Arithmetic operations.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Mathematical": {
+						"type": "string",
+						"default": "#99EEDE",
+						"description": "Mathematical operation.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Relational": {
+						"type": "string",
+						"default": "#fdaeb7",
+						"description": "Relational operations.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Logical": {
+						"type": "string",
+						"default": "#82B1FF",
+						"description": "Logical operations.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Bynary": {
+						"type": "string",
+						"default": "#FFA149",
+						"description": "Bynary operations.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Inline comments": {
+						"type": "string",
+						"default": "#6A9955",
+						"description": "Inline comments.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					},
+					"Dark Theme.Inline strings": {
+						"type": "string",
+						"default": "#FDFFC5",
+						"description": "Inline strings.",
+						"pattern": "^#([A-Fa-f0-9]{6})$",
+						"patternErrorMessage": "Incorrect hex format. Please use a valid hex color code (e.g., #RRGGBB)."
+					}
+				}
+			}
+		]
 	}
 }
