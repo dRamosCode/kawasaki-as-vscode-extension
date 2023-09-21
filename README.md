@@ -20,6 +20,10 @@ The extension provides syntax highlighting for Kawasaki AS code, making it easie
 <img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/themeLight.png?raw=true" style="height:30em; padding:1em"></img>
 <img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/themeDark.png?raw=true" style="height:30em; padding:1em"></img></p>
 
+### Custom colors
+
+Syntax highlight colors can be modified by changing VSCode settings. You can access your settings via `Ctrl+` shortcut or by navigating to `File/Preferences/Settings`. In the `Extensions` section, you will find all the settings related to this extension under the `Kawasaki AS Language` title.
+
 ## Code Snippets
 
 Access a collection of code snippets specific to Kawasaki AS language. Snippets include descriptions and comments to help you understand their usage. Quick access via `ctrl` + `space` key shortcut. Accept snippets by pressing `tab` or `Enter`.
