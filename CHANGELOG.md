@@ -31,3 +31,9 @@ Initial release.
 ### Fixed
 
 - Fix comment line dissapearing on code formatting
+
+## [1.0.4] - 2023/09/05
+
+### Added
+
+- Added light and dark theme color customization settings
