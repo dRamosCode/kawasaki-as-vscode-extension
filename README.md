@@ -53,6 +53,7 @@ Quickly navigate to the definition of a program or a `GOTO` label in your Kawasa
 ### Program tree
 
 Get a quick tree view of the project programs in the sidebar, allowing you to easily navigate and switch between different programs in your project.
+By default `Realtime-refresh` mode is active with a refresh rate of `1s`. These settings can be changed through VSCode Settings, under `Kawasaki AS Language` tab.
 
 <p align="center"><img src="https://github.com/dRamosCode/kawasaki-as-vscode-extension/blob/main/docs/thumbnails/programTree.gif?raw=true"></img></p>
 
