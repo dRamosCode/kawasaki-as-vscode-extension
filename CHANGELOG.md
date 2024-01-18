@@ -37,3 +37,10 @@ Initial release.
 ### Added
 
 - Added light and dark theme color customization settings
+
+## [1.1.0] - 2023/01/15
+
+### Added
+
+- Added sidebar program tree auto-refresh.
+- Added to settings auto-refresh activation and refresh rate.
