@@ -30,7 +30,7 @@ const sidebarGenerator = function (context) {
     if (activeTextEditor) {
       const position = new vscode.Position(lineNumber, 0);
       activeTextEditor.selection = new vscode.Selection(position, position);
-      activeTextEditor.revealRange(activeTextEditor.selection, vscode.TextEditorRevealType.InCenter);
+      activeTextEditor.revealRange(activeTextEditor.selection, vscode.TextEditorRevealType.AtTop);
     }
   });
 
