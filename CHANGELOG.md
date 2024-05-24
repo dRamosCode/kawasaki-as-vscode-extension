@@ -44,3 +44,19 @@ Initial release.
 
 - Added sidebar program tree auto-refresh.
 - Added to settings auto-refresh activation and refresh rate.
+
+## [1.1.1] - 2024/05/23
+
+### Fixed
+
+- Fixed jump to definitions with dots in the word not working.
+
+### Changed
+
+- Changed jump behaviour to show on top of editor instead of in the middle.
+
+## [1.1.2] - 2024/05/24
+
+### Fixed
+
+- Fixed wordPattern to match default words plus dots.
