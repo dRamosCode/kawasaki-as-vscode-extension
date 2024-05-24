@@ -4,7 +4,7 @@
 <h1 align="center">Kawasaki AS Language Support for VSCode</h1>
 
 ![Version](https://img.shields.io/visual-studio-marketplace/v/dRamosCode.kawasaki-as-language?include_prereleases&label=Version)
-![Release Date](https://img.shields.io/visual-studio-marketplace/release-date/dRamosCode.kawasaki-as-language?label=Release%20date)
+![Release Date](https://img.shields.io/visual-studio-marketplace/last-updated/dRamosCode.kawasaki-as-language?label=Release%20date)
 ![License](https://img.shields.io/github/license/dRamosCode/kawasaki-as-vscode-extension?label=License)
 ![Downloads](https://img.shields.io/visual-studio-marketplace/i/dRamosCode.kawasaki-as-language?label=Downloads)
 
