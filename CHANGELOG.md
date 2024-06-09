@@ -60,3 +60,9 @@ Initial release.
 ### Fixed
 
 - Fixed wordPattern to match default words plus dots.
+
+## [1.1.3] - 2024/06/09
+
+### Added
+
+- Added .pg extension support.

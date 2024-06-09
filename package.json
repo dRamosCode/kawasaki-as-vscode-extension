@@ -26,7 +26,8 @@
           "as"
         ],
         "extensions": [
-          ".as"
+          ".as",
+          ".pg"
         ],
         "configuration": "./syntaxes/language-configuration.json"
       }
