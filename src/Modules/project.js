@@ -49,6 +49,7 @@ class Project{
                     programName = this.document.lineAt(index).text.trim().split(' ')[0];
                     this.addInterfaceProgram(programName,index)
                     break;
+                case ".CBSDATA":
                 case ".END":
                     this.addProgramEnd(index)
                 default:

@@ -49,6 +49,8 @@ function formatCode(code, languageId, lineCount) {
 		".INTER_PANEL_TITLE",
 		".INTER_PANEL_COLOR_D",
 		".SIG_COMMENT",
+		".CBSDATA",
+		".LOCAL_PROGRAM"
 	];
 	decreaseIndentPattern = [".END", "END", "ELSE", "UNTIL", "VALUE", "ANY", "SVALUE"];
 

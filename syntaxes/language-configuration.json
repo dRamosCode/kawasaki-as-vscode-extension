@@ -26,7 +26,7 @@
 		["\"", "\""]
 	],
 	"indentationRules": {
-		"increaseIndentPattern": "\\.PROGRAM|\\.TRANS|\\.JOINTS|\\.REALS|\\.STRINGS|\\.INTEGER|\\.ROBOTDATA1|\\.OPE_INFO1|\\.SYSDATA|\\.CONDITION|\\.AUXDATA|\\.INTER_PANEL_D|\\.INTER_PANEL_TITLE|\\.INTER_PANEL_COLOR_D|\\.SIG_COMMENT|\\bTHEN|\\bELSE|\\bDO|\\bTO|\\bOF|\\bVALUE|\\bANY|\\bSVALUE",
+		"increaseIndentPattern": "\\.PROGRAM|\\.TRANS|\\.JOINTS|\\.REALS|\\.STRINGS|\\.INTEGER|\\.ROBOTDATA1|\\.OPE_INFO1|\\.SYSDATA|\\.CONDITION|\\.AUXDATA|\\.INTER_PANEL_D|\\.INTER_PANEL_TITLE|\\.INTER_PANEL_COLOR_D|\\.SIG_COMMENT|\\.CBSDATA|\\.LOCAL_PROGRAM|\\bTHEN|\\bELSE|\\bDO|\\bTO|\\bOF|\\bVALUE|\\bANY|\\bSVALUE",
 		"decreaseIndentPattern": "\\.END|\\bEND|\\bELSE|\\bUNTIL|\\bVALUE|\\bANY|\\bSVALUE"
 	},
 	"wordPattern": "[\\w.]+"
