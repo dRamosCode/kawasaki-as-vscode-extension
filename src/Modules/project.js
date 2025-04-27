@@ -40,6 +40,7 @@ class Project{
                 case ".CONDITION":
                 case ".AUXDATA":
                 case ".SIG_COMMENT":
+                case ".CBSDATA":
                     programName = this.document.lineAt(index).text.trim().split(' ')[0];
                     this.addSystemProgram(programName,index)
                     break;
