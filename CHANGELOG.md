@@ -66,3 +66,9 @@ Initial release.
 ### Added
 
 - Added .pg extension support.
+
+## [1.1.4] - 2025/04/27
+
+### Added
+
+- Added .CBSDATA and .LOCAL_PROGRAM syntax highlighting.
