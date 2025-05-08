@@ -27,11 +27,11 @@ function formatCode(code, languageId, lineCount) {
 	// Indentation Rules
 	increaseIndentPattern = [
 		".PROGRAM",
-		"THEN",
+		"\\bIF\\b.*?\\bTHEN\\b",
 		"ELSE",
 		"DO",
-		"TO",
-		"OF",
+		"\\bFOR\\b.*?\\bTO\\b",
+		"\\bCASE\\b.*?\\bOF\\b",
 		"VALUE",
 		"ANY",
 		"SVALUE",
@@ -52,7 +52,7 @@ function formatCode(code, languageId, lineCount) {
 		".CBSDATA",
 		".LOCAL_PROGRAM"
 	];
-	decreaseIndentPattern = [".END", "END", "ELSE", "UNTIL", "VALUE", "ANY", "SVALUE"];
+	decreaseIndentPattern = [".END", ".End", "END", "ELSE", "UNTIL", "VALUE", "ANY", "SVALUE"];
 
 	// Variables
 	let indentationLevel = 0;
@@ -89,7 +89,7 @@ function formatCode(code, languageId, lineCount) {
 
 		// Loop through decrease patterns and see if matches
 		decreaseIndentPattern.forEach((pattern, index) => {
-			const regExpPattern = new RegExp("\\b" + pattern + "\\b");
+			const regExpPattern = RegExp("(^|\\s)" + pattern + "(?=\\s|$)");
 			if (regExpPattern.test(testLine) == true && comment == false) {
 				indentationLevel--;
 				if (indentationLevel < 0) {
@@ -109,10 +109,9 @@ function formatCode(code, languageId, lineCount) {
 
 		// Loop through increase patterns and see if matches
 		increaseIndentPattern.forEach((pattern, index) => {
-			const regExpPattern = new RegExp("\\b" + pattern + "\\b");
+			const regExpPattern = RegExp("(^|\\s)" + pattern + "(?=\\s|$)");
 			if (
-				(regExpPattern.test(testLine) == true && comment == false && pattern.charAt(0) != ".") ||
-				(pattern.charAt(0) == "." && lines[i].charAt(0) == "." && lines[i].includes(pattern)) ||
+				(regExpPattern.test(testLine) == true && comment == false) ||
 				program == true
 			) {
 				indentationLevel++;

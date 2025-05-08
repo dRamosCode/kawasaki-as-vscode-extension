@@ -28,7 +28,7 @@
 		},
 		"program": {
 			"name": "as.keyword.control.program",
-			"match": "(\\.PROGRAM)|(\\.END)|(\\.TRANS)|(\\.JOINTS)|(\\.REALS)|(\\.STRINGS)|(\\.INTEGER)|(\\.ROBOTDATA1|(\\.OPE_INFO1))|(\\.SYSDATA)|(\\.CONDITION)|(\\.AUXDATA)|(\\.INTER_PANEL_D)|(\\.INTER_PANEL_TITLE)|(\\.INTER_PANEL_COLOR_D)|(\\.SIG_COMMENT)|(\\.CBSDATA)|(\\.LOCAL_PROGRAM)"
+			"match": "(\\.PROGRAM)|(\\.END)|(\\.TRANS)|(\\.JOINTS)|(\\.REALS)|(\\.STRINGS)|(\\.INTEGER)|(\\.ROBOTDATA1|(\\.OPE_INFO1))|(\\.SYSDATA)|(\\.CONDITION)|(\\.AUXDATA)|(\\.INTER_PANEL_D)|(\\.INTER_PANEL_TITLE)|(\\.INTER_PANEL_COLOR_D)|(\\.SIG_COMMENT)|(\\.CBSDATA)|(\\.LOCAL_PROGRAM)|(\\.End)"
 		},
 		"flow": {
 			"name": "keyword.flow",
