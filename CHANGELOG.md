@@ -72,3 +72,13 @@ Initial release.
 ### Added
 
 - Added .CBSDATA and .LOCAL_PROGRAM syntax highlighting.
+
+## [1.1.5] - 2025/05/21
+
+### Added
+
+- Added .pg program sidebar support.
+
+### Fixed
+
+- Fixed formatter expressions to better match keywords and avoid wrong indentation in comments, strings etc.
