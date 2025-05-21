@@ -82,13 +82,14 @@ function fillSidebar() {
     const activeFileName = activeEditor.document.fileName;
     const lastDotIndex = activeFileName.lastIndexOf(".");
     const extension = activeFileName.slice(lastDotIndex + 1);
+    const allowedExtensions = ["as", "pg"];
 
-    // Non AS file
-    if (extension != "as") {
-      // Mark as non AS file in treeView
-      let userTreeProvider = new ProjectTreeProvider([{ label: "Not an AS file." }]);
-      let systemTreeProvider = new ProjectTreeProvider([{ label: "Not an AS file." }]);
-      let interfaceTreeProvider = new ProjectTreeProvider([{ label: "Not an AS file." }]);
+    // Non AS or PG file
+    if (!allowedExtensions.includes(extension)) {
+      // Mark as non AS or PG file in treeView
+      let userTreeProvider = new ProjectTreeProvider([{ label: "Not an AS or PG file." }]);
+      let systemTreeProvider = new ProjectTreeProvider([{ label: "Not an AS or PG file." }]);
+      let interfaceTreeProvider = new ProjectTreeProvider([{ label: "Not an AS or PG file." }]);
       const userPrograms = vscode.window.createTreeView("user", { treeDataProvider: userTreeProvider });
       const systemPrograms = vscode.window.createTreeView("system", { treeDataProvider: systemTreeProvider });
       const interfacePrograms = vscode.window.createTreeView("interface", { treeDataProvider: interfaceTreeProvider });
