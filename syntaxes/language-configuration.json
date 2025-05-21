@@ -1,33 +1,33 @@
 {
-	"comments": {
-		// symbol used for single line comment. Remove this entry if your language does not support line comments
-		"lineComment": ";"
-	},
-	// symbols used as brackets
-	"brackets": [
-		["{", "}"],
-		["[", "]"],
-		["(", ")"]
-	],
-	// symbols that are auto closed when typing
-	"autoClosingPairs": [
-		["{", "}"],
-		["[", "]"],
-		["(", ")"],
-		["'", "'"],
-		["\"", "\""]
-	],
-	// symbols that can be used to surround a selection
-	"surroundingPairs": [
-		["{", "}"],
-		["[", "]"],
-		["(", ")"],
-		["'", "'"],
-		["\"", "\""]
-	],
-	"indentationRules": {
-		"increaseIndentPattern": "\\.PROGRAM|\\.TRANS|\\.JOINTS|\\.REALS|\\.STRINGS|\\.INTEGER|\\.ROBOTDATA1|\\.OPE_INFO1|\\.SYSDATA|\\.CONDITION|\\.AUXDATA|\\.INTER_PANEL_D|\\.INTER_PANEL_TITLE|\\.INTER_PANEL_COLOR_D|\\.SIG_COMMENT|\\.CBSDATA|\\.LOCAL_PROGRAM|\\bTHEN|\\bELSE|\\bDO|\\bTO|\\bOF|\\bVALUE|\\bANY|\\bSVALUE",
-		"decreaseIndentPattern": "\\.END|\\bEND|\\bELSE|\\bUNTIL|\\bVALUE|\\bANY|\\bSVALUE"
-	},
-	"wordPattern": "[\\w.]+"
+  "comments": {
+    // symbol used for single line comment. Remove this entry if your language does not support line comments
+    "lineComment": ";"
+  },
+  // symbols used as brackets
+  "brackets": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"]
+  ],
+  // symbols that are auto closed when typing
+  "autoClosingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["'", "'"],
+    ["\"", "\""]
+  ],
+  // symbols that can be used to surround a selection
+  "surroundingPairs": [
+    ["{", "}"],
+    ["[", "]"],
+    ["(", ")"],
+    ["'", "'"],
+    ["\"", "\""]
+  ],
+  "indentationRules": {
+    "increaseIndentPattern": "^\\s*.PROGRAM\\b|^\\s*IF\\b.*\\bTHEN\\b|^\\s*ELSE\\b|^\\s*WHILE\\b.*\\DO\\b|^\\s*DO\\b|^\\s*FOR\\b.*\\TO\\b|^\\s*CASE\\b.*\\OF\\b|^\\s*SCASE\\b.*\\OF\\b|^\\s*VALUE\\b|^\\s*ANY\\b|^\\s*SVALUE\\b|^\\s*.TRANS\\b|^\\s*.JOINTS\\b|^\\s*.REALS\\b|^\\s*.STRINGS\\b|^\\s*.INTEGER\\b|^\\s*.ROBOTDATA1\\b|^\\s*.OPE_INFO1\\b|^\\s*.SYSDATA\\b|^\\s*.CONDITION\\b|^\\s*.AUXDATA\\b|^\\s*.INTER_PANEL_D\\b|^\\s*.INTER_PANEL_TITLE\\b|^\\s*.INTER_PANEL_COLOR_D\\b|^\\s*.SIG_COMMENT\\b|^\\s*.CBSDATA\\b|^\\s*.LOCAL_PROGRAM\\b",
+    "decreaseIndentPattern": "^\\s*\\.END\\b|^\\s*END\\b|^\\s*.End\\b|^\\s*ELSE\\b|^\\s*UNTIL\\b|^\\s*VALUE\\b|^\\s*SVALUE\\b|^\\s*ANY\\b"
+  },
+  "wordPattern": "[\\w.]+"
 }
