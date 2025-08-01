@@ -82,7 +82,7 @@ function fillSidebar() {
     const activeFileName = activeEditor.document.fileName;
     const lastDotIndex = activeFileName.lastIndexOf(".");
     const extension = activeFileName.slice(lastDotIndex + 1);
-    const allowedExtensions = ["as", "pg"];
+    const allowedExtensions = ["as", "pg", "AS", "PG"];
 
     // Non AS or PG file
     if (!allowedExtensions.includes(extension)) {
