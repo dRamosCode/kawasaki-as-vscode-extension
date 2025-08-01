@@ -82,3 +82,9 @@ Initial release.
 ### Fixed
 
 - Fixed formatter expressions to better match keywords and avoid wrong indentation in comments, strings etc.
+
+## [1.1.6] - 2025/08/01
+
+### Fixed
+
+- Fixed sidebar not working for uppercase AS/PG extensions.
