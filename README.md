@@ -6,7 +6,7 @@
 ![Version](https://img.shields.io/visual-studio-marketplace/v/dRamosCode.kawasaki-as-language?include_prereleases&label=Version)
 ![Release Date](https://img.shields.io/visual-studio-marketplace/last-updated/dRamosCode.kawasaki-as-language?label=Release%20date)
 ![License](https://img.shields.io/github/license/dRamosCode/kawasaki-as-vscode-extension?label=License)
-![Downloads](https://img.shields.io/visual-studio-marketplace/i/dRamosCode.kawasaki-as-language?label=Downloads)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/dRamosCode.kawasaki-as-language?label=Downloads)
 
 This VSCode extension provides language support for Kawasaki AS programming language, offering a range of features to enhance your development experience.
 
