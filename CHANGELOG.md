@@ -88,3 +88,9 @@ Initial release.
 ### Fixed
 
 - Fixed sidebar not working for uppercase AS/PG extensions.
+
+## [1.1.7] - 2025/09/28
+
+### Fixed
+
+- Fixed GOTO jumps in compact IF instructions.
