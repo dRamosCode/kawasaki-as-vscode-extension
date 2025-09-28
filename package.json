@@ -17,6 +17,10 @@
     "vscode": "^1.77.0"
   },
   "main": "./src/extension.js",
+  "activationEvents": [
+    "onLanguage:as",
+    "onLanguage:pg"
+  ],
   "contributes": {
     "languages": [
       {
