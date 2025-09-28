@@ -4,7 +4,7 @@
   "description": "VSCode Kawasaki AS language support",
   "version": "1.1.7",
   "publisher": "dRamosCode",
-  "icon": "./docs/icon.png",
+  "icon": "docs/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/dRamosCode/kawasaki-as-vscode-extension"
